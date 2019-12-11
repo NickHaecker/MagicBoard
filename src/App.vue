@@ -13,7 +13,7 @@
     </v-list>
   </v-navigation-drawer>
 
-  <v-app-bar class="appbar" app clipped-right height="120" style="background: blue">
+  <v-app-bar class="appbar" app clipped-right height="120" style="background: #131b42">
     <v-spacer/>
     <router-link to="" class="topnavrouter"><v-icon style="color: white; font-size: 45px">mdi-login-variant</v-icon></router-link>
     <router-link to="" class="topnavrouter"><v-icon style="color: white; font-size: 45px">mdi-logout-variant</v-icon></router-link>
