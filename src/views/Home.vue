@@ -21,5 +21,5 @@ export default {
 };
 </script>
 <style scoped>
-.h1{font-family: "Fredericka the Great"; margin-left: 115%; font-size: 50px; font-weight: lighter}
+.h1{font-family: "Fredericka the Great"; margin-left: 50%; font-size: 50px; font-weight: lighter; color: white}
 </style>
