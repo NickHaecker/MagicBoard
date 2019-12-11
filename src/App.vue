@@ -77,6 +77,6 @@ export default {
   .topnavrouter {text-decoration: none;justify-content: flex-end;align-items: center;margin-right: 4%;align-self: center;order: 2;}
   .topnavrouter:hover, .topnavrouter:focus {text-decoration: underline solid red;font-weight: bold;-webkit-transform: translateY(4px);transition: 0.5s;color: white;text-underline-position: under}
   .appbar{justify-content: space-between}
-  .content{justify-content: center; align-content: center; margin-left: 20%; width: 60%; border-left: black solid; border-right: solid black; text-align: center}
+  .content{margin-left: 20%; width: 60%; border-left: black solid; border-right: solid black; text-align: center}
   .view{position: fixed}
 </style>

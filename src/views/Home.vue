@@ -3,7 +3,7 @@
     <section>
       <article>
         <h1 class="h1">
-          Magic Board
+          MagicBoard
         </h1>
       </article>
     </section>
@@ -21,5 +21,5 @@ export default {
 };
 </script>
 <style scoped>
-.h1{font-family: "Fredericka the Great"}
+.h1{font-family: "Fredericka the Great"; margin-left: 115%; font-size: 50px; font-weight: lighter}
 </style>
