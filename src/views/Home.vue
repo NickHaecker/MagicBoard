@@ -1,13 +1,24 @@
 <template>
   <div class="home">
     <section>
-      <article>
         <h1 class="h1">
           MagicBoard
         </h1>
-      </article>
     </section>
-    <router-link to=""><v-icon style="font-size: 45px; align-self: flex-end; float: right; color: white">mdi-settings</v-icon></router-link>
+    <section>
+        <article>
+            <v-icon></v-icon>
+            <h2></h2>
+        </article>
+        <article>
+            <v-icon></v-icon>
+            <h2></h2>
+        </article>
+        <article>
+
+        </article>
+    </section>
+    <router-link to=""><v-icon style="font-size: 45px; align-self: flex-end; float: right; color: white; margin-bottom: 1%">mdi-settings</v-icon></router-link>
   </div>
 </template>
 
@@ -23,4 +34,5 @@ export default {
 </script>
 <style scoped>
 .h1{font-family: "Fredericka the Great"; font-size: 50px; font-weight: lighter; color: white; text-align: center}
+    .home{font-family: "Hind Vadodara"}
 </style>

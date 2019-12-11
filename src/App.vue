@@ -52,5 +52,4 @@ export default {
   logo {height: 80px;width: 100px;align-content: flex-start;align-self: center; margin-top: 20%}
   .topnavrouter {text-decoration: none;justify-content: flex-end;align-items: center;margin-right: 4%;align-self: center;order: 2;}
   .appbar{justify-content: space-between}
-  .content{}
 </style>
