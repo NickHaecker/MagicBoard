@@ -7,6 +7,7 @@
         </h1>
       </article>
     </section>
+    <router-link to=""><v-icon style="font-size: 45px; align-self: flex-end; float: right; color: white">mdi-settings</v-icon></router-link>
   </div>
 </template>
 
@@ -21,5 +22,5 @@ export default {
 };
 </script>
 <style scoped>
-.h1{font-family: "Fredericka the Great"; margin-left: 50%; font-size: 50px; font-weight: lighter; color: white}
+.h1{font-family: "Fredericka the Great"; font-size: 50px; font-weight: lighter; color: white; text-align: center}
 </style>
