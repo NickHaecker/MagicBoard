@@ -1,6 +1,12 @@
 <template>
   <div class="home">
-MAgic baord
+    <section>
+      <article>
+        <h1 class="h1">
+          Magic Board
+        </h1>
+      </article>
+    </section>
   </div>
 </template>
 
@@ -15,5 +21,5 @@ export default {
 };
 </script>
 <style scoped>
-
+.h1{font-family: "Fredericka the Great"}
 </style>
