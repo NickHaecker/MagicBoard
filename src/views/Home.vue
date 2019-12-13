@@ -1,9 +1,7 @@
 <template>
   <div class="home">
     <section>
-        <h1 class="h1">
-          MagicBoard
-        </h1>
+
     </section>
     <section>
         <article>
