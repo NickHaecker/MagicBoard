@@ -1,22 +1,23 @@
 <template>
   <div class="home">
-    <section>
-
-    </section>
-    <section>
-        <article>
-            <v-icon></v-icon>
-            <h2></h2>
-        </article>
-        <article>
-            <v-icon></v-icon>
-            <h2></h2>
-        </article>
-        <article>
-
-        </article>
-    </section>
-    <router-link to=""><v-icon style="font-size: 45px; align-self: flex-end; float: right; color: white; margin-bottom: 1%">mdi-settings</v-icon></router-link>
+   <section class="first">
+       <article class="fistart">
+           <header>
+               <h1>
+                   Registrieren
+               </h1>
+           </header>
+       </article>
+   </section>
+      <section>
+          <v-text-field name="E-MAil" label="E-MAil" id="E-MAil" v-model="email" type="E-MAil" required class="eingabefeld" style="width: 30%; background: #FFFFFF; opacity: 0.6;margin-left: 35%; border-radius: 20px;margin-top: 5%"></v-text-field>
+          <v-text-field name="Username" label="Username" id="Username" v-model="Username" required class="eingabefeld"  style="width: 30% ;background: #FFFFFF; opacity: 0.6;margin-left: 35%;border-radius: 20px; margin-top: 5%"></v-text-field>
+          <v-text-field name="Passwort" label="Passwort" id="Passwort" v-model="Passwort" type="Passwort" required class="eingabefeld" style="width: 30%; background: #FFFFFF; opacity: 0.6;margin-left: 35%; border-radius: 20px;margin-top: 5%"></v-text-field>
+          <v-text-field name="Passwort bestätitgen" label="Passwort bestätitgen" id="Passwort bestätitgen" v-model="confirmpassword" required class="eingabefeld"  style="width: 30% ;background: #FFFFFF; opacity: 0.6;margin-left: 35%;border-radius: 20px; margin-top: 5%"></v-text-field>
+      </section>
+      <section class="settings">
+          <router-link to="" style="text-decoration: none"><v-icon style="font-size: 45px;float: right; color: white; margin-right: 5%;background: #4C7FCC">mdi-settings</v-icon></router-link>
+      </section>
   </div>
 </template>
 
@@ -31,6 +32,6 @@ export default {
 };
 </script>
 <style scoped>
-.h1{font-family: "Fredericka the Great"; font-size: 50px; font-weight: lighter; color: white; text-align: center}
     .home{font-family: "Hind Vadodara"}
+    .fistart h1{color: white; font-size: 40px; font-family: "Fredericka the Great"; text-align: center; font-weight: lighter}
 </style>
