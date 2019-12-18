@@ -14,6 +14,9 @@
                 <p>Freunde finden</p>
             </article>
         </section>
+        <section class="settings">
+            <router-link to="Einstellungen" style="text-decoration: none"><v-icon style="font-size: 70px;float: right; color: white; margin-right: 2%;margin-top5%;background: #4C7FCC">mdi-settings</v-icon></router-link>
+        </section>
     </div>
 </template>
 

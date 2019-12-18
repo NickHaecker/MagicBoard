@@ -107,9 +107,9 @@
     .head{font-family: "Fredericka the Great";text-align: center;font-size: 40px;color: white}
     .head h1{font-weight: lighter}
     .frnds{font-family: 25px;color: white;margin-left: 15%;font-family: "Fredericka the Great";margin-bottom: -2%}
-    .frnds h2{font-weight: lighter}
+    .frnds h2{font-weight: lighter;font-family: "Hind Vadodara"}
     .allplayers{margin-top: 5%}
     .elle{font-family: 25px;color: white;margin-left: 15%;font-family: "Fredericka the Great";margin-bottom: -2%}
-    .elle h2{font-weight: lighter}
+    .elle h2{font-weight: lighter;font-family: "Hind Vadodara"}
     .back{margin-top: 5%}
 </style>

@@ -47,7 +47,7 @@
             </v-container>
           </section>
           <v-btn text @click="dialog = false" class="zurückbutton"><v-icon style="color: white; font-size: 70px; margin-bottom: 10%;background: #4C7FCC">mdi-arrow-left-drop-circle-outline</v-icon></v-btn>
-
+          <router-link to="Einstellungen" style="text-decoration: none"><v-icon @click="dialog = false" style="font-size: 70px;float: right; color: white; margin-right: 2%;background: #4C7FCC">mdi-settings</v-icon></router-link>
         </div>
       </v-dialog>
     </v-row>
@@ -59,7 +59,7 @@
         <router-view  class="view"/>
       </v-content>
     </v-img>
-
+    
 </v-app>
 </template>
 

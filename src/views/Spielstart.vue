@@ -18,7 +18,7 @@
             <v-list dense class="frindliste">
                 <h3>Freunde:</h3>
                 <v-list-item-group v-model="item" color="primary">
-                    <v-list-item v-for="(item, i) in items" :key="i">
+                    <v-list-item v-for="(item, i) in items" :key="i" link :to="item.to">
                         <v-list-item-content>
                             <v-list-item-title v-text="item.text" style="color: white;border-bottom: white solid 1px; align-self: center;font-family: 'Hind Vadodara'"></v-list-item-title>
                         </v-list-item-content>
@@ -38,24 +38,24 @@
         data: () => ({
             item: 1,
             items: [
-                { text: 'Lorem'},
-                { text: 'Lorem'},
-                { text: 'Lorem'},
-                { text: 'Lorem'},
-                { text: 'Lorem'},
-                { text: 'Lorem'},
-                { text: 'Lorem'},
-                { text: 'Lorem'},
-                { text: 'Lorem'},
-                { text: 'Lorem'},
-                { text: 'Lorem'},
-                { text: 'Lorem'},
-                { text: 'Lorem'},
-                { text: 'Lorem'},
-                { text: 'Lorem'},
-                { text: 'Lorem'},
-                { text: 'Lorem'},
-                { text: 'Lorem'},
+                { text: 'Lorem',to:"Schwierigkeitsgrad"},
+                { text: 'Lorem',to:"Schwierigkeitsgrad"},
+                { text: 'Lorem',to:"Schwierigkeitsgrad"},
+                { text: 'Lorem',to:"Schwierigkeitsgrad"},
+                { text: 'Lorem',to:"Schwierigkeitsgrad"},
+                { text: 'Lorem',to:"Schwierigkeitsgrad"},
+                { text: 'Lorem',to:"Schwierigkeitsgrad"},
+                { text: 'Lorem',to:"Schwierigkeitsgrad"},
+                { text: 'Lorem',to:"Schwierigkeitsgrad"},
+                { text: 'Lorem',to:"Schwierigkeitsgrad"},
+                { text: 'Lorem',to:"Schwierigkeitsgrad"},
+                { text: 'Lorem',to:"Schwierigkeitsgrad"},
+                { text: 'Lorem',to:"Schwierigkeitsgrad"},
+                { text: 'Lorem',to:"Schwierigkeitsgrad"},
+                { text: 'Lorem',to:"Schwierigkeitsgrad"},
+                { text: 'Lorem',to:"Schwierigkeitsgrad"},
+                { text: 'Lorem',to:"Schwierigkeitsgrad"},
+                { text: 'Lorem',to:"Schwierigkeitsgrad"},
             ],
         }),
     }

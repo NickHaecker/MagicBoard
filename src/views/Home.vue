@@ -16,7 +16,7 @@
           <v-text-field name="Passwort bestätitgen" label="Passwort bestätitgen" id="Passwort bestätitgen" v-model="confirmpassword" required class="eingabefeld"  style="width: 30% ;background: #FFFFFF; opacity: 0.6;margin-left: 35%;border-radius: 20px; margin-top: 5%"></v-text-field>
       </section>
       <section class="settings">
-          <router-link to="" style="text-decoration: none"><v-icon style="font-size: 45px;float: right; color: white; margin-right: 5%;background: #4C7FCC">mdi-settings</v-icon></router-link>
+          <router-link to="Einstellungen" style="text-decoration: none"><v-icon style="font-size: 70px;float: right; color: white; margin-right: 5%;margin-top5%;background: #4C7FCC">mdi-settings</v-icon></router-link>
       </section>
   </div>
 </template>

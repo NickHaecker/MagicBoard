@@ -1,29 +1,38 @@
 <template>
     <div>
-        <paintable
-                :active="isActive"
-                :width="800"
-                :height="800"
-                :disableNavigation="disableNavigation"
-                :hide="hidePaintable"
-                :horizontalNavigation="true"
-                :navigation="navigation"
-                :name="isFirstPaintable ? 'my-screen' : 'my-second-screen'"
-                :factor="1"
-                :lineWidth="dynamicLineWidth"
-                :lineWidthEraser="20"
-                :useEraser="useEraser"
-                :color="color"
-                class="paint"
-                ref="paintable"
-                @toggle-paintable="toggledPaintable"
-        >
-        </paintable>
+        <section class="erstesec">
+
+        </section>
+        <section class="zeichensec">
+            <paintable
+                    :active="isActive"
+                    :width="800"
+                    :height="800"
+                    :disableNavigation="disableNavigation"
+                    :hide="hidePaintable"
+                    :horizontalNavigation="true"
+                    :navigation="navigation"
+                    :name="isFirstPaintable ? 'my-screen' : 'my-second-screen'"
+                    :factor="1"
+                    :lineWidth="dynamicLineWidth"
+                    :lineWidthEraser="20"
+                    :useEraser="useEraser"
+                    :color="color"
+                    class="paint"
+                    ref="paintable"
+                    @toggle-paintable="toggledPaintable"
+            >
+            </paintable>
+        </section>
+        <section class="zweitesec">
+            <router-link to="Spielende" class="endrouter" style="text-decoration: none"><v-icon style="color: white; font-size: 70px; margin-bottom: 10%;background: #4C7FCC">mdi-arrow-right-drop-circle-outline</v-icon></router-link>
+        </section>
     </div>
 </template>
 
 <script>
     export default {
+        name:"Zeichnen",
         data() {
             return {
                 isFirstPaintable: true,
@@ -99,4 +108,5 @@
     button:hover {
         opacity: 1;
     }
+    .endrouter{float: right; margin-right: 3%}
 </style>

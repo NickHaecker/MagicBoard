@@ -1,5 +1,12 @@
 <template>
     <div>
+        <section>
+            <header>
+                <h1>
+                    Schwierigkeitsgrade
+                </h1>
+            </header>
+        </section>
         <section class="erstereihe">
             <router-link to="Zeichnen" class="klas1" style="text-decoration: none"><v-card class="schwierigkeitskarte" width="250" height="150" >
                 <v-card-text class="klassen">

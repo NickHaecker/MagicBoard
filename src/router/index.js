@@ -8,6 +8,9 @@ import Freundesuchen from "../views/Freundesuchen";
 import Freundeliste from "../views/Freundeliste";
 import Schwierigkeitsgrad from "../views/Schwierigkeitsgrad";
 import Zeichnen from "../views/Zeichnen";
+import Spielende from "../views/Spielende";
+import Einstellungen from "../views/Einstellungen";
+import AGB from "../views/AGB";
 
 Vue.use(VueRouter);
 
@@ -16,6 +19,21 @@ const routes = [
     path: "/",
     name: "home",
     component: Home
+  },
+  {
+    path: "/Einstellungen",
+    name: "Einstellungen",
+    component: Einstellungen
+  },{
+    path: "/AGB",
+    name: "AGB",
+    component: AGB
+  },
+
+  {
+    path: "/Spielende",
+    name: "Spielende",
+    component: Spielende
   },
   {
     path: "/Zeichnen",
