@@ -24,7 +24,8 @@ const routes = [
     path: "/Einstellungen",
     name: "Einstellungen",
     component: Einstellungen
-  },{
+  },
+  {
     path: "/AGB",
     name: "AGB",
     component: AGB
@@ -69,7 +70,7 @@ const routes = [
     path: "/Schwierigkeitsgrad",
     name: "Schwierigkeitsgrad",
     component: Schwierigkeitsgrad
-  },
+  }
 ];
 
 const router = new VueRouter({
