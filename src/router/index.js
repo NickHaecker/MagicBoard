@@ -7,6 +7,7 @@ import Spielstart from "../views/Spielstart";
 import Freundesuchen from "../views/Freundesuchen";
 import Freundeliste from "../views/Freundeliste";
 import Schwierigkeitsgrad from "../views/Schwierigkeitsgrad";
+import Zeichnen from "../views/Zeichnen";
 
 Vue.use(VueRouter);
 
@@ -15,6 +16,11 @@ const routes = [
     path: "/",
     name: "home",
     component: Home
+  },
+  {
+    path: "/Zeichnen",
+    name: "Zeichnen",
+    component: Zeichnen
   },
   {
     path: "/Startscreen",

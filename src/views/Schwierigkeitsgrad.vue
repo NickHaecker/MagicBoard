@@ -1,24 +1,24 @@
 <template>
     <div>
         <section class="erstereihe">
-            <router-link to="" class="klas1" style="text-decoration: none"><v-card class="schwierigkeitskarte" width="250" height="150" >
+            <router-link to="Zeichnen" class="klas1" style="text-decoration: none"><v-card class="schwierigkeitskarte" width="250" height="150" >
                 <v-card-text class="klassen">
                     <p>Leicht</p>
                 </v-card-text>
             </v-card></router-link>
-            <router-link to="" class="klas2" style="text-decoration: none"><v-card class="schwierigkeitskarte" width="250" height="150" >
+            <router-link to="Zeichnen" class="klas2" style="text-decoration: none"><v-card class="schwierigkeitskarte" width="250" height="150" >
                 <v-card-text class="klassen">
                     <p>Mittel</p>
                 </v-card-text>
             </v-card></router-link>
         </section>
         <section class="zweitereihe">
-            <router-link to="" class="klas1" style="text-decoration: none"><v-card class="schwierigkeitskarte" width="250" height="150" >
+            <router-link to="Zeichnen" class="klas1" style="text-decoration: none"><v-card class="schwierigkeitskarte" width="250" height="150" >
                 <v-card-text class="klassen">
                     <p>Schwer</p>
                 </v-card-text>
             </v-card></router-link>
-            <router-link to="" class="klas2" style="text-decoration: none"><v-card class="schwierigkeitskarte" width="250" height="150" >
+            <router-link to="Zeichnen" class="klas2" style="text-decoration: none"><v-card class="schwierigkeitskarte" width="250" height="150" >
                 <v-card-text class="klassen">
                     <p>You could never</p>
                 </v-card-text>
