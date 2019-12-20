@@ -128,7 +128,7 @@ export default {
           click: this.togglePainting,
           subNavigation: [
             {
-              icon: "mdi-color",
+              icon: "mdi-palette",
               name: "color",
               body: "color",
               disabled: false,

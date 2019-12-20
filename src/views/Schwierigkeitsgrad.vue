@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section>
+    <section class="head">
       <header>
         <h1>
           Schwierigkeitsgrade
@@ -57,14 +57,16 @@ export default {
   display: flex;
   margin-top: 10%;
 }
-.klas1 {
-  margin-left: 19%;
-}
-.klas2 {
-  margin-left: 19%;
-}
 .klassen {
   text-align: center;
+}
+.klas1{
+  justify-content: center;
+  align-content: center;
+}
+.klas2{
+  justify-content: center;
+  align-content: center;
 }
 .klassen p {
   margin-top: 22%;
@@ -75,4 +77,5 @@ export default {
 .schwierigkeitskarte {
   background: #4c7fcc;
 }
+  .head h1{font-family: "Fredericka the Great";font-weight: lighter;font-size: 40px;text-align: center;color: white}
 </style>

@@ -5,7 +5,8 @@
         to="Spielstart"
         style="text-decoration: none"
         class="playbutton"
-        ><v-icon style="color: white; font-size: 70px;background: #4C7FCC"
+        ><v-icon style="color: white; font-size: 70px"
+                 class="icon"
           >mdi-play</v-icon
         ></router-link
       >
@@ -13,7 +14,8 @@
     <section class="highfrie">
       <article class="score">
         <router-link to="Highscore" style="text-decoration: none"
-          ><v-icon style="background: #4C7FCC;font-size: 70px;color: #FFFFFF"
+          ><v-icon style="font-size: 70px;color: #FFFFFF"
+                   class="icon"
             >mdi-trophy</v-icon
           ></router-link
         >
@@ -22,7 +24,8 @@
       </article>
       <article class="friends">
         <router-link to="Spielstart" style="text-decoration: none"
-          ><v-icon style="background: #4C7FCC;font-size: 70px;color: white"
+          ><v-icon style="font-size: 70px;color: white"
+                   class="icon"
             >mdi-account-multiple-plus</v-icon
           ></router-link
         >
@@ -32,7 +35,8 @@
     <section class="settings">
       <router-link to="Einstellungen" style="text-decoration: none"
         ><v-icon
-          style="font-size: 70px;float: right; color: white; margin-right: 2%;margin-top5%;background: #4C7FCC"
+          style="font-size: 70px;float: right; color: white; margin-right: 2%;margin-top5%"
+          class="setting"
           >mdi-settings</v-icon
         ></router-link
       >
@@ -77,4 +81,6 @@ export default {
   margin-left: 1%;
   color: white;
 }
+  .icon:hover{background: #4C7FCC;border-radius: 40px}
+  .setting:hover{background: #4C7FCC;border-radius: 40px}
 </style>

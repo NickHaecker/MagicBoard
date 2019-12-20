@@ -38,7 +38,8 @@
         to="Startscreen"
         style="text-decoration: none;margin-left: 2%"
         ><v-icon
-          style="color: white; font-size: 70px; margin-bottom: 10%;background: #4C7FCC"
+          style="color: white; font-size: 70px; margin-bottom: 10%"
+          class="icon"
           >mdi-arrow-left-drop-circle-outline</v-icon
         ></router-link
       >
@@ -155,4 +156,5 @@ export default {
 .back {
   margin-top: 5%;
 }
+  .icon:hover{background: #4C7FCC;border-radius: 40px}
 </style>

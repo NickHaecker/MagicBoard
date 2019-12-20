@@ -52,7 +52,8 @@
     <section class="settings">
       <router-link to="Einstellungen" style="text-decoration: none"
         ><v-icon
-          style="font-size: 70px;float: right; color: white; margin-right: 5%;margin-top5%;background: #4C7FCC"
+          style="font-size: 70px;float: right; color: white; margin-right: 5%;margin-top5%"
+          class="setting"
           >mdi-settings</v-icon
         ></router-link
       >
@@ -77,4 +78,5 @@ export default {
   text-align: center;
   font-weight: lighter;
 }
+  .setting:hover{background: #4C7FCC;border-radius: 40px}
 </style>

@@ -110,4 +110,5 @@ header {
   align-self: center;
   margin-top: 10%;
 }
+.head h1{font-family: "Fredericka the Great";font-weight: lighter;font-size: 40px;text-align: center;color: white}
 </style>

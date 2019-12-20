@@ -28,7 +28,8 @@
         class="endrouter"
         style="text-decoration: none"
         ><v-icon
-          style="color: white; font-size: 70px; margin-bottom: 10%;background: #4C7FCC"
+          style="color: white; font-size: 70px; margin-bottom: 10%"
+          class="weiter"
           >mdi-arrow-right-drop-circle-outline</v-icon
         ></router-link
       >
@@ -118,4 +119,5 @@ button:hover {
   float: right;
   margin-right: 3%;
 }
+  .weiter:hover{background: #4C7FCC;border-radius: 40px}
 </style>

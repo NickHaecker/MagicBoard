@@ -19,7 +19,7 @@
         <v-dialog v-model="dialog" persistent max-width="60%">
           <template v-slot:activator="{ on }">
             <v-icon
-              style="color: white; font-size: 45px;background: #4C7FCC"
+              style="color: white; font-size: 45px;"
               class="iconin"
               v-on="on"
               >mdi-login-variant</v-icon
@@ -68,7 +68,7 @@
                       @click="dialog = false"
                       type="submit"
                       class="anmeldbutton"
-                      style="font-size: 70px; color: white; background: #4C7FCC; border: transparent; margin-left: 45%; margin-top: -2%"
+                      style="font-size: 70px; color: white; margin-left: 45%; margin-top: -2%;background-image: url(./assets/Hintergrund.jpg)"
                       >mdi-login-variant</v-icon
                     ></router-link
                   >
@@ -99,14 +99,16 @@
             </section>
             <v-btn text @click="dialog = false" class="zurückbutton"
               ><v-icon
-                style="color: white; font-size: 70px; margin-bottom: 10%;background: #4C7FCC"
+                style="color: white; font-size: 70px; margin-bottom: 10%"
+                class="zrück"
                 >mdi-arrow-left-drop-circle-outline</v-icon
               ></v-btn
             >
             <router-link to="Einstellungen" style="text-decoration: none"
               ><v-icon
                 @click="dialog = false"
-                style="font-size: 70px;float: right; color: white; margin-right: 2%;background: #4C7FCC"
+                style="font-size: 70px;float: right; color: white; margin-right: 2%"
+                class="setting"
                 >mdi-settings</v-icon
               ></router-link
             >
@@ -115,7 +117,7 @@
       </v-row>
       <router-link to="" class="topnavrouter"
         ><v-icon
-          style="color: white; font-size: 45px;background: #4C7FCC"
+          style="color: white; font-size: 45px"
           class="iconout"
           >mdi-logout-variant</v-icon
         ></router-link
@@ -173,8 +175,8 @@ logo {
 }
 .anmeldekarte {
   background-image: url(./assets/Hintergrund.jpg);
-  height: 520px;
   width: 100%;
+  height: 520px;
 }
 .anmelden {
   color: white;
@@ -191,4 +193,9 @@ logo {
   margin-left: 36%;
   margin-top: -1%;
 }
+.iconin:hover{background: #4C7FCC;border-radius: 20px}
+  .zrück:hover{background: #4C7FCC;border-radius: 40px}
+  .anmeldbutton:hover{background: #4C7FCC;border-radius: 40px}
+  .setting:hover{background: #4C7FCC;border-radius: 40px}
+  .iconout:hover{background: #4C7FCC;border-radius: 40px}
 </style>

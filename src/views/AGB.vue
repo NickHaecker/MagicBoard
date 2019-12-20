@@ -102,7 +102,8 @@
         to="Einstellungen"
         style="text-decoration: none;margin-left: 2%"
         ><v-icon
-          style="color: white; font-size: 70px; margin-bottom: 10%;background: #4C7FCC"
+          style="color: white; font-size: 70px; margin-bottom: 10%"
+          class="back"
           >mdi-arrow-left-drop-circle-outline</v-icon
         ></router-link
       >
@@ -124,6 +125,7 @@ export default {
   font-size: 40px;
   text-align: center;
   margin-top: 2%;
+  text-transform: uppercase
 }
 .lorem {
   width: 70%;
@@ -137,4 +139,5 @@ export default {
 .lorem p {
   text-align: center;
 }
+  .back:hover{background: #4C7FCC;border-radius: 40px}
 </style>

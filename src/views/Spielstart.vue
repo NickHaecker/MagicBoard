@@ -3,7 +3,8 @@
     <section class="menü">
       <article class="zflplay">
         <router-link to="Schwierigkeitsgrad" style="text-decoration: none"
-          ><v-icon style="background: #4C7FCC;font-size: 70px;color: #FFFFFF"
+          ><v-icon style="font-size: 70px;color: #FFFFFF"
+                   class="icon"
             >mdi-refresh</v-icon
           ></router-link
         >
@@ -11,7 +12,8 @@
       </article>
       <article class="frndsuch">
         <router-link to="Freundesuchen" style="text-decoration: none"
-          ><v-icon style="background: #4C7FCC;font-size: 70px;color: #FFFFFF"
+          ><v-icon style="font-size: 70px;color: #FFFFFF"
+                   class="icon"
             >mdi-account-search</v-icon
           ></router-link
         >
@@ -19,7 +21,8 @@
       </article>
       <article class="frndlist">
         <router-link to="Freundeliste" style="text-decoration: none"
-          ><v-icon style="background: #4C7FCC;font-size: 70px;color: #FFFFFF"
+          ><v-icon style="font-size: 70px;color: #FFFFFF"
+                   class="icon"
             >mdi-account-badge-horizontal</v-icon
           ></router-link
         >
@@ -42,9 +45,10 @@
       </v-list>
     </section>
     <section class="zurück">
-      <router-link to="Startscreen"
+      <router-link to="Startscreen" style="text-decoration: none"
         ><v-icon
-          style="color: white; font-size: 70px; margin-bottom: 10%;background: #4C7FCC"
+          style="color: white; font-size: 70px; margin-bottom: 10%"
+          class="back"
           >mdi-arrow-left-drop-circle-outline</v-icon
         ></router-link
       >
@@ -124,4 +128,6 @@ export default {
   margin-top: 25%;
   margin-left: 2%;
 }
+  .icon:hover{background: #4C7FCC;border-radius: 40px}
+  .back:hover{background: #4C7FCC;border-radius: 40px}
 </style>
