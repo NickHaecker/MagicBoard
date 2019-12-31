@@ -1,6 +1,15 @@
 <template>
   <div>
-    <section class="erstesec"></section>
+    <section class="erstesec">
+      <header>
+        <h2>
+          Zeichne:
+        </h2>
+        <p>
+          Haus
+        </p>
+      </header>
+    </section>
     <section class="zeichensec">
       <paintable
         :active="isActive"
@@ -120,4 +129,6 @@ button:hover {
   margin-right: 3%;
 }
   .weiter:hover{background: #4C7FCC;border-radius: 40px}
+  .erstesec h2{font-family: "Fredericka the Great";font-size: 30px;font-weight: lighter;text-align: center;text-transform: uppercase;color: white}
+  .erstesec p{font-family: "Hind Vadodara";font-size: 20px;font-weight: lighter;text-align: center;text-transform: uppercase;text-decoration: black underline;color: white}
 </style>

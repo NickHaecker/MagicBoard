@@ -103,7 +103,27 @@ export default {
         {
           name: "Svenja",
           score: 1893
-        }
+        },
+        {
+          name: "Lorem",
+          score: 12
+        },
+        {
+          name: "Lorem",
+          score: 12
+        },
+        {
+          name: "Lorem",
+          score: 12
+        },
+        {
+          name: "Lorem",
+          score: 12
+        },
+        {
+          name: "Lorem",
+          score: 12
+        },
       ]
     };
   }

@@ -61,12 +61,13 @@ export default {
   text-align: center;
 }
 .klas1{
-  justify-content: center;
-  align-content: center;
+  justify-content: flex-start;
+  align-content: flex-start;
 }
 .klas2{
-  justify-content: center;
-  align-content: center;
+  justify-content: flex-end;
+  align-content: flex-end;
+  margin-left: 45%;
 }
 .klassen p {
   margin-top: 22%;
@@ -78,4 +79,5 @@ export default {
   background: #4c7fcc;
 }
   .head h1{font-family: "Fredericka the Great";font-weight: lighter;font-size: 40px;text-align: center;color: white}
+
 </style>
