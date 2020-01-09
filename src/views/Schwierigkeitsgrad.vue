@@ -8,36 +8,36 @@
       </header>
     </section>
     <section class="erstereihe">
-      <router-link to="Zeichnen" class="klas1" style="text-decoration: none"
-        ><v-card class="schwierigkeitskarte" width="250" height="150">
+      <v-card class="schwierigkeitskarte" id="links"
+                 @click="$router.push({name:'Zeichnen'})"
+                 width="250" height="150">
           <v-card-text class="klassen">
             <p>Leicht</p>
           </v-card-text>
-        </v-card></router-link
-      >
-      <router-link to="Zeichnen" class="klas2" style="text-decoration: none"
-        ><v-card class="schwierigkeitskarte" width="250" height="150">
+        </v-card>
+     <v-card class="schwierigkeitskarte" id="rechts" width="250"
+                 @click="$router.push({name:'Zeichnen'})"
+                 height="150">
           <v-card-text class="klassen">
             <p>Mittel</p>
           </v-card-text>
-        </v-card></router-link
-      >
+        </v-card>
     </section>
     <section class="zweitereihe">
-      <router-link to="Zeichnen" class="klas1" style="text-decoration: none"
-        ><v-card class="schwierigkeitskarte" width="250" height="150">
+      <v-card class="schwierigkeitskarte" id="links" width="250"
+              @click="$router.push({name:'Zeichnen'})"
+              height="150">
           <v-card-text class="klassen">
             <p>Schwer</p>
           </v-card-text>
-        </v-card></router-link
-      >
-      <router-link to="Zeichnen" class="klas2" style="text-decoration: none"
-        ><v-card class="schwierigkeitskarte" width="250" height="150">
+        </v-card>
+     <v-card class="schwierigkeitskarte" id="rechts" width="250"
+             @click="$router.push({name:'Zeichnen'})"
+             height="150">
           <v-card-text class="klassen">
             <p>You could never</p>
           </v-card-text>
-        </v-card></router-link
-      >
+        </v-card>
     </section>
   </div>
 </template>
@@ -51,23 +51,14 @@ export default {
 <style scoped>
 .erstereihe {
   display: flex;
-  margin-top: 10%;
+  margin-top: 15%;
 }
 .zweitereihe {
   display: flex;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 .klassen {
   text-align: center;
-}
-.klas1{
-  justify-content: flex-start;
-  align-content: flex-start;
-}
-.klas2{
-  justify-content: flex-end;
-  align-content: flex-end;
-  margin-left: 45%;
 }
 .klassen p {
   margin-top: 22%;
@@ -77,7 +68,11 @@ export default {
 }
 .schwierigkeitskarte {
   background: #4c7fcc;
+  justify-content: flex-start;
+  align-content: flex-start;
 }
+#rechts{margin-left: 5%}
+#links{margin-left: 25%}
   .head h1{font-family: "Fredericka the Great";font-weight: lighter;font-size: 40px;text-align: center;color: white}
 
 </style>

@@ -22,12 +22,11 @@
       <h3>Benachrichtigung</h3>
     </section>
     <section class="einst" id="agb">
-      <router-link to="AGB" style="text-decoration: none"
-        ><v-icon style="font-size: 60px;color: #FFFFFF"
+      <v-icon style="font-size: 60px;color: #FFFFFF"
                  class="icon"
+                 @click="$router.push({name:'AGB'})"
           >mdi-book</v-icon
-        ></router-link
-      >
+        >
       <h3>AGB</h3>
     </section>
     <section class="einst" id="logout">
@@ -38,13 +37,12 @@
       <h3>Logout</h3>
     </section>
     <section class="back">
-      <router-link to="Startscreen" style="text-decoration: none"
-        ><v-icon
+     <v-icon
           style="color: white; font-size: 70px; margin-bottom: 10%"
           class="backs"
+          @click="$router.push({name:'Startscreen'})"
           >mdi-arrow-left-drop-circle-outline</v-icon
-        ></router-link
-      >
+        >
     </section>
   </div>
 </template>

@@ -98,15 +98,12 @@
       </p>
     </section>
     <section class="zurück">
-      <router-link
-        to="Einstellungen"
-        style="text-decoration: none;margin-left: 2%"
-        ><v-icon
+      <v-icon
           style="color: white; font-size: 70px; margin-bottom: 10%"
           class="back"
+          @click="$router.push({name:'Einstellungen'})"
           >mdi-arrow-left-drop-circle-outline</v-icon
-        ></router-link
-      >
+        >
     </section>
   </div>
 </template>

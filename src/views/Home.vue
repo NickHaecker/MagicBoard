@@ -49,17 +49,16 @@
         style="width: 30% ;background: #FFFFFF; opacity: 0.6;margin-left: 35%;border-radius: 20px; margin-top: 5%"
       ></v-text-field>
       <article class="art">
-       <router-link to="Startscreen" class="regis" style="text-decoration: none"><v-btn type="submit" class="btn">Registrieren</v-btn></router-link>
+      <v-btn type="submit" class="btn" @click="$router.push({name:'Startscreen'})">Registrieren</v-btn>
       </article>
     </section>
     <section class="settings">
-      <router-link to="Einstellungen" style="text-decoration: none"
-        ><v-icon
-          style="font-size: 70px;float: right; color: white; margin-right: 5%;margin-top5%"
+      <v-icon
+          style="font-size: 70px;float: right; color: white; margin-right: 5%;margin-top: 5%"
           class="setting"
+          @click="$router.push({name:'Einstellungen'})"
           >mdi-settings</v-icon
-        ></router-link
-      >
+        >
     </section>
   </div>
 </template>
@@ -82,7 +81,6 @@ export default {
   font-weight: lighter;
 }
   .setting:hover{background: #4C7FCC;border-radius: 40px}
-  .regis{align-content: center;justify-content: center;margin-top: 10%; margin-left: 42.5%;font-family: "Hind Vadodara"}
-  .btn{font-family: "Hind Vadodara"}
+  .btn{font-family: "Hind Vadodara";align-content: center;justify-content: center;margin-top: 2%; margin-left: 42.5%;font-family: "Hind Vadodara"}
   .art{margin-top: 5%}
 </style>

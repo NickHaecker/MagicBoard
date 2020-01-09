@@ -1,6 +1,11 @@
 <template>
   <div>
     <section class="erstesec">
+      <div id="timer">
+        <span id="minutes">{{ minutes }}</span>
+        <span id="middle">:</span>
+        <span id="seconds">{{ seconds }}</span>
+      </div>
       <header>
         <h2>
           Zeichne:
@@ -12,6 +17,7 @@
     </section>
     <section class="zeichensec">
       <paintable
+              @click="startTimer"
         :active="isActive"
         :width="800"
         :height="800"
@@ -32,16 +38,12 @@
       </paintable>
     </section>
     <section class="zweitesec">
-      <router-link
-        to="Spielende"
-        class="endrouter"
-        style="text-decoration: none"
-        ><v-icon
+      <v-icon
+              @click="$router.push({name:'Spielende'})"
           style="color: white; font-size: 70px; margin-bottom: 10%"
           class="weiter"
           >mdi-arrow-right-drop-circle-outline</v-icon
-        ></router-link
-      >
+        >
     </section>
   </div>
 </template>
@@ -57,7 +59,10 @@ export default {
       dynamicLineWidth: 5,
       isActive: false,
       useEraser: false,
-      color: "#000"
+      color: "#000",
+      timer: null,
+      totalTime: (1 * 90),
+      resetButton: false,
     };
   },
   computed: {
@@ -71,11 +76,40 @@ export default {
           body: "color"
         }
       };
+    },
+    minutes: function() {
+      const minutes = Math.floor(this.totalTime / 60);
+      return this.padTime(minutes);
+    },
+    seconds: function() {
+      const seconds = this.totalTime - (this.minutes * 60);
+      return this.padTime(seconds);
     }
   },
   methods: {
     toggledPaintable(isActive) {
       this.isActive = isActive;
+    },
+    startTimer: function() {
+      this.timer = setInterval(() => this.countdown(), 1000);
+      this.resetButton = true;
+    },
+    resetTimer: function() {
+      this.totalTime = (25 * 60);
+      clearInterval(this.timer);
+      this.timer = null;
+      this.resetButton = false;
+    },
+    padTime: function(time) {
+      return (time < 10 ? '0' : '') + time;
+    },
+    countdown: function() {
+      if(this.totalTime >= 1){
+        this.totalTime--;
+      } else{
+        this.totalTime = 0;
+        this.resetTimer()
+      }
     }
   }
 };
@@ -124,11 +158,19 @@ button {
 button:hover {
   opacity: 1;
 }
-.endrouter {
-  float: right;
-  margin-right: 3%;
-}
-  .weiter:hover{background: #4C7FCC;border-radius: 40px}
+.weiter{float: right;margin-right: 3%}
+  .weiter:hover{background: #4C7FCC;border-radius: 40px;}
   .erstesec h2{font-family: "Fredericka the Great";font-size: 30px;font-weight: lighter;text-align: center;text-transform: uppercase;color: white}
   .erstesec p{font-family: "Hind Vadodara";font-size: 20px;font-weight: lighter;text-align: center;text-transform: uppercase;text-decoration: black underline;color: white}
+#message {
+  color: #DDD;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+#timer {
+  font-size: 200px;
+  line-height: 1;
+  margin-bottom: 40px;
+}
 </style>

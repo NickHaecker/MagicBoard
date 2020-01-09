@@ -1,45 +1,38 @@
 <template>
   <div>
     <section class="plbt">
-      <router-link
-        to="Spielstart"
-        style="text-decoration: none"
-        class="playbutton"
-        ><v-icon style="color: white; font-size: 70px"
+     <v-icon style="color: white; font-size: 70px"
                  class="icon"
+                 @click="$router.push({name:'Spielstart'})"
           >mdi-play</v-icon
-        ></router-link
-      >
+        >
     </section>
     <section class="highfrie">
       <article class="score">
-        <router-link to="Highscore" style="text-decoration: none"
-          ><v-icon style="font-size: 70px;color: #FFFFFF"
+        <v-icon style="font-size: 70px;color: #FFFFFF"
                    class="icon"
+                   @click="$router.push({name:'Highscore'})"
             >mdi-trophy</v-icon
-          ></router-link
-        >
+          >
         <p>Dein Highscore:</p>
         <p>2345</p>
       </article>
       <article class="friends">
-        <router-link to="Spielstart" style="text-decoration: none"
-          ><v-icon style="font-size: 70px;color: white"
+        <v-icon style="font-size: 70px;color: white"
                    class="icon"
+                   @click="$router.push({name:'Spielstart'})"
             >mdi-account-multiple-plus</v-icon
-          ></router-link
-        >
+          >
         <p>Freunde finden</p>
       </article>
     </section>
     <section class="settings">
-      <router-link to="Einstellungen" style="text-decoration: none"
-        ><v-icon
+     <v-icon
           style="font-size: 70px;float: right; color: white; margin-right: 2%;margin-top5%"
           class="setting"
+          @click="$router.push({name:'Einstellungen'})"
           >mdi-settings</v-icon
-        ></router-link
-      >
+        >
     </section>
   </div>
 </template>
@@ -51,8 +44,7 @@ export default {
 </script>
 
 <style scoped>
-.playbutton {
-}
+
 .plbt {
   margin-top: 15%;
   margin-left: 45%;

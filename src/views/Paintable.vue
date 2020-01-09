@@ -201,16 +201,11 @@ export default {
     this.init();
   },
   computed: {
-    /**
-     * Get scaling factor of current device
-     */
+
     scalingFactor() {
       return window.devicePixelRatio || 1;
     },
-    /**
-     * Check if it is a touch device
-     * thanks to: https://ctrlq.org/code/19616-detect-touch-screen-javascript
-     */
+
     isTouch() {
       return (
         "ontouchstart" in window ||
@@ -220,40 +215,25 @@ export default {
     }
   },
   methods: {
-    /**
-     * Cancel current drawing and remove lines
-     */
+
     cancelDrawing() {
       this.loadImageFromStorage();
       this.isActive = false;
       this.isColorPickerOpen = false;
       this.isLineWidthPickerOpen = false;
     },
-    /**
-     * Set storage item
-     * @param {string} key
-     * @param {string} value
-     */
     setItem(key, value) {
       localStorage.setItem(key, value);
     },
-    /**
-     * Get storage item
-     * @param {string} key
-     */
+
     async getItem(key) {
       return localStorage.getItem(key);
     },
-    /**
-     * Remove item from storage
-     * @param {string} key
-     */
+
     removeItem(key) {
       localStorage.removeItem(key);
     },
-    /**
-     * Init paintable component and set all variables
-     */
+
     init() {
       try {
         this.pointCoords = [];
@@ -286,22 +266,15 @@ export default {
         // this.hidePaintableNavigation = true;
       }
     },
-    //--------------------------------------------------
-    /**
-     * Undo drawed line
-     */
+
     undoDrawingStep() {
       this.restoreCanvasState(this.undoList, this.redoList);
     },
-    /**
-     * Redo drawed line
-     */
+
     redoDrawingStep() {
       this.restoreCanvasState(this.redoList, this.undoList);
     },
-    /**
-     * Restore previous image
-     */
+
     restoreCanvasState(pop, push) {
       this.ctx.globalCompositeOperation = "source-over";
       if (pop.length) {
@@ -310,9 +283,7 @@ export default {
         this.loadImageFromStorage(restore_state);
       }
     },
-    /**
-     * Save the current canvas state an push it to undo- or redolist
-     */
+
     saveCurrentCanvasState(canvas, list, keepRedo) {
       keepRedo = keepRedo || false;
       if (!keepRedo) {
@@ -320,10 +291,7 @@ export default {
       }
       (list || this.undoList).push(canvas.toDataURL("image/png"));
     },
-    //-------------------------------------------------------------------------
-    /**
-     * Get base64 from local storage and load it into canvas
-     */
+
     async loadImageFromStorage(image) {
       this.clearCanvas();
       const base64Image = image || (await this.getItem(this.name));
@@ -338,18 +306,13 @@ export default {
         this.canvasIsEmpty = this.isCanvasBlank();
       }
     },
-    /**
-     * Set current canvas size
-     */
+
     setCanvasSize() {
-      // this.width = window.innerWidth;
-      // this.height = window.innerHeight;
+
       currentX = 0;
       currentY = 0;
     },
-    /**
-     * Clear complete canvas
-     */
+
     clearCanvas() {
       this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
     },
@@ -362,10 +325,7 @@ export default {
       blank.height = this.canvas.height;
       return blank.toDataURL() === this.canvas.toDataURL();
     },
-    /**
-     * Check first, if canvas is empty.
-     * If its not empty save it to the storage.
-     */
+
     saveCurrentCanvasToStorage() {
       // reset to pencil
       this.isEraserActive = false;
@@ -386,10 +346,7 @@ export default {
       this.redoList = [];
       this.canvasIsEmpty = this.isCanvasBlank();
     },
-    //-------------------------------------------------------------------------
-    /**
-     * Start drawing lines
-     */
+
     drawStart(e) {
       e.preventDefault();
       this.thresholdReached = false;
@@ -416,9 +373,7 @@ export default {
           : "source-over";
       }
     },
-    /**
-     * End of drawing a line
-     */
+
     drawEnd() {
       if (this.isActive) {
         this.drawLine(this.ctx);
@@ -427,9 +382,7 @@ export default {
         this.thresholdReached = false;
       }
     },
-    /**
-     * Generate line from points array
-     */
+
     drawLine(context) {
       this.tempCtx.clearRect(0, 0, this.canvas.width, this.canvas.height);
       let p1 = this.pointCoords[0];
@@ -451,9 +404,7 @@ export default {
         context.closePath();
       }
     },
-    /**
-     * Draw line on move and add current position to an array
-     */
+
     drawMove(e) {
       e.preventDefault();
       if (this.isActive && this.startedDrawing) {

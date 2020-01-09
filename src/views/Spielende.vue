@@ -20,28 +20,21 @@
       ></v-data-table>
     </section>
     <section class="buttons">
-      <router-link
-        to="Schwierigkeitsgrad"
-        style="text-decoration: none;margin-right: 5%"
-      >
         <v-btn
+                @click="$router.push({name:'Schwierigkeitsgrad'})"
           text
           style="background: #4C7FCC;color: white;font-size: 25px;border-radius:20px "
         >
           Neue Runde?
         </v-btn>
-      </router-link>
-      <router-link
-        to="Startscreen"
-        style="text-decoration: none;margin-left: 5%"
-      >
+
         <v-btn
           text
+          @click="$router.push({name:'Startscreen'})"
           style="background: #4C7FCC;color: white;font-size: 25px;border-radius:20px "
         >
           Hauptmenü
         </v-btn>
-      </router-link>
     </section>
   </div>
 </template>

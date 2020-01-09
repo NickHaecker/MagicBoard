@@ -23,13 +23,12 @@
       ></v-text-field>
     </section>
     <section class="back">
-      <router-link to="Spielstart" style="text-decoration: none;margin-left: 2%"
-        ><v-icon
+     <v-icon
+              @click="$router.push({name:'Spielstart'})"
           style="color: white; font-size: 70px; margin-bottom: 10%"
           class="backs"
           >mdi-arrow-left-drop-circle-outline</v-icon
-        ></router-link
-      >
+        >
     </section>
   </div>
 </template>

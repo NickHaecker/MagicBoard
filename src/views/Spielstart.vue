@@ -2,30 +2,27 @@
   <div>
     <section class="menü">
       <article class="zflplay">
-        <router-link to="Schwierigkeitsgrad" style="text-decoration: none"
-          ><v-icon style="font-size: 70px;color: #FFFFFF"
+       <v-icon style="font-size: 70px;color: #FFFFFF"
                    class="icon"
+                   @click="$router.push({name:'Schwierigkeitsgrad'})"
             >mdi-refresh</v-icon
-          ></router-link
-        >
+          >
         <p>Zufällige Spieler</p>
       </article>
       <article class="frndsuch">
-        <router-link to="Freundesuchen" style="text-decoration: none"
-          ><v-icon style="font-size: 70px;color: #FFFFFF"
+        <v-icon style="font-size: 70px;color: #FFFFFF"
                    class="icon"
+                   @click="$router.push({name:'Freundesuchen'})"
             >mdi-account-search</v-icon
-          ></router-link
-        >
+          >
         <p>Freunde suchen</p>
       </article>
       <article class="frndlist">
-        <router-link to="Freundeliste" style="text-decoration: none"
-          ><v-icon style="font-size: 70px;color: #FFFFFF"
+       <v-icon style="font-size: 70px;color: #FFFFFF"
                    class="icon"
+                   @click="$router.push({name:'Freundeliste'})"
             >mdi-account-badge-horizontal</v-icon
-          ></router-link
-        >
+          >
         <p>Freundesliste</p>
       </article>
     </section>
@@ -45,13 +42,12 @@
       </v-list>
     </section>
     <section class="zurück">
-      <router-link to="Startscreen" style="text-decoration: none"
-        ><v-icon
+      <v-icon
           style="color: white; font-size: 70px; margin-bottom: 10%"
           class="back"
+          @click="$router.push({name:'Startscreen'})"
           >mdi-arrow-left-drop-circle-outline</v-icon
-        ></router-link
-      >
+        >
     </section>
   </div>
 </template>

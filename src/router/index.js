@@ -11,6 +11,7 @@ import Zeichnen from "../views/Zeichnen";
 import Spielende from "../views/Spielende";
 import Einstellungen from "../views/Einstellungen";
 import AGB from "../views/AGB";
+import Passwortvergessen from "../views/Passwortvergessen";
 
 Vue.use(VueRouter);
 
@@ -19,6 +20,11 @@ const routes = [
     path: "/",
     name: "home",
     component: Home
+  },
+  {
+    path: "/Passwortvergessen",
+    name: "Passwortvergessen",
+    component: Passwortvergessen
   },
   {
     path: "/Einstellungen",
