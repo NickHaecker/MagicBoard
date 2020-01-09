@@ -52,10 +52,12 @@
               { disabled: item.disabled }
             ]"
           >
-            <div
+            <v-icon
+                    class="iconlist"
+                    style="font-size: 40px"
               @click="item.click"
-              v-html="item.isActive ? item.activeBody : item.body"
-            ></div>
+              v-html="item.isActive ? item.activeBody : item.icon"
+            ></v-icon>
           </li>
         </ul>
         <div
@@ -316,4 +318,5 @@ export default {
 .navigation__horizontalNavigation .navigationMenu li {
   display: inline-flex;
 }
+  .iconlist{color: white;font-size: 20px}
 </style>

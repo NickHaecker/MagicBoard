@@ -21,6 +21,7 @@
     </section>
     <section class="buttons">
         <v-btn
+                class="nr"
                 @click="$router.push({name:'Schwierigkeitsgrad'})"
           text
           style="background: #4C7FCC;color: white;font-size: 25px;border-radius:20px "
@@ -30,6 +31,7 @@
 
         <v-btn
           text
+          class="hm"
           @click="$router.push({name:'Startscreen'})"
           style="background: #4C7FCC;color: white;font-size: 25px;border-radius:20px "
         >
@@ -103,5 +105,7 @@ header {
   align-self: center;
   margin-top: 10%;
 }
+.nr{margin-right: 5%}
+.hm{margin-left: 5%}
 .head h1{font-family: "Fredericka the Great";font-weight: lighter;font-size: 40px;text-align: center;color: white}
 </style>

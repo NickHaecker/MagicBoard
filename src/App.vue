@@ -97,9 +97,9 @@
         </v-dialog>
       </v-row>
       <v-toolbar-title>
-        <header class="überschrift">
+        <h1 class="überschrift">
           Magic Board
-        </header>
+        </h1>
       </v-toolbar-title>
       <v-icon
           style="color: white; font-size: 45px"
@@ -136,12 +136,6 @@ logo {
   align-content: flex-start;
   align-self: center;
   margin-top: 20%;
-}
-.topnavrouter {
-  text-decoration: none;
-  justify-content: flex-end;
-  align-items: center;
-  align-self: center;
 }
 .appbar {
   justify-content: space-between;
@@ -185,7 +179,7 @@ logo {
 }
 .pwgotten {
   margin-left: 36%;
-  margin-top: -1%;
+  color: white;
 }
 .pwgotten:hover{cursor: pointer}
 .iconin:hover{background: #4C7FCC;border-radius: 20px}

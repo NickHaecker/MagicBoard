@@ -32,6 +32,7 @@
     <section class="einst" id="logout">
       <v-icon style="font-size: 60px;color: #FFFFFF"
               class="icon"
+              @click="$router.push({name:'home'})"
         >mdi-logout-variant</v-icon
       >
       <h3>Logout</h3>
