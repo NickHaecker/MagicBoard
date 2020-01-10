@@ -1,13 +1,11 @@
 <template>
-    <div>pwgotten</div>
+  <div>pwgotten</div>
 </template>
 
 <script>
-    export default {
-        name: "Passwortvergessen"
-    }
+export default {
+  name: "Passwortvergessen"
+};
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

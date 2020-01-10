@@ -23,12 +23,12 @@
       ></v-text-field>
     </section>
     <section class="back">
-     <v-icon
-              @click="$router.push({name:'Spielstart'})"
-          style="color: white; font-size: 70px; margin-bottom: 10%"
-          class="backs"
-          >mdi-arrow-left-drop-circle-outline</v-icon
-        >
+      <v-icon
+        @click="$router.push({ name: 'Spielstart' })"
+        style="color: white; font-size: 70px; margin-bottom: 10%"
+        class="backs"
+        >mdi-arrow-left-drop-circle-outline</v-icon
+      >
     </section>
   </div>
 </template>
@@ -56,5 +56,8 @@ export default {
 .back {
   margin-top: 35%;
 }
-  .backs:hover{background: #4C7FCC;border-radius: 40px}
+.backs:hover {
+  background: #4c7fcc;
+  border-radius: 40px;
+}
 </style>

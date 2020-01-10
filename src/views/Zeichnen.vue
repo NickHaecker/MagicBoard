@@ -10,11 +10,12 @@
         </h2>
       </header>
       <v-icon
-              style="color: white; font-size: 70px;margin-left: 13%"
-              id="start"
-              class="spielstart"
-              v-if="!timer"
-              @click="startTimer">
+        style="color: white; font-size: 70px;margin-left: 13%"
+        id="start"
+        class="spielstart"
+        v-if="!timer"
+        @click="startTimer"
+      >
         mdi-play
       </v-icon>
       <div class="anweisung" v-if="timer">
@@ -26,11 +27,11 @@
       </div>
       <div class="wort" v-if="timer">
         <div>
-          <h3 class="aufg">{{this.wortchen}}</h3>
+          <h3 class="aufg">{{ this.wortchen }}</h3>
         </div>
-<!--        <div v-for="wort in worte" v-bind:key="wort">-->
-<!--          <h3>{{wort.wort}}</h3>-->
-<!--        </div>-->
+        <!--        <div v-for="wort in worte" v-bind:key="wort">-->
+        <!--          <h3>{{wort.wort}}</h3>-->
+        <!--        </div>-->
       </div>
     </section>
     <section class="zeichensec">
@@ -59,8 +60,6 @@
 </template>
 
 <script>
-
-
 export default {
   name: "Zeichnen",
   data() {
@@ -73,36 +72,36 @@ export default {
       useEraser: false,
       color: "#000",
       timer: null,
-      totalTime: (1 * 90),
+      totalTime: 1 * 90,
       resetButton: false,
-      worte:[
-        {wort: "Haus"},
-        {wort: "Baum"},
-        {wort: "Haus"},
-        {wort: "Sonne"},
-        {wort: "Flasche"},
-        {wort: "Stift"},
-        {wort: "Blume"},
-        {wort: "Apfel"},
-        {wort: "Fahrrad"},
-        {wort: "Brille"},
-        {wort: "Hose"},
-        {wort: "Shirt"},
-        {wort: "Schneeflocke"},
-        {wort: "Fluss"},
-        {wort: "Waschmaschine"},
-        {wort: "Stuhl"},
-        {wort: "Hand"},
-        {wort: "Maus"},
-        {wort: "Hammer"},
-        {wort: "Schlüssel"},
-        {wort: "Muschel"},
-        {wort: "Flugzeug"},
-        {wort: "Schlitten"},
-        {wort: "Schloss"},
-        {wort: "Feuerwehrauto"},
+      worte: [
+        { wort: "Haus" },
+        { wort: "Baum" },
+        { wort: "Haus" },
+        { wort: "Sonne" },
+        { wort: "Flasche" },
+        { wort: "Stift" },
+        { wort: "Blume" },
+        { wort: "Apfel" },
+        { wort: "Fahrrad" },
+        { wort: "Brille" },
+        { wort: "Hose" },
+        { wort: "Shirt" },
+        { wort: "Schneeflocke" },
+        { wort: "Fluss" },
+        { wort: "Waschmaschine" },
+        { wort: "Stuhl" },
+        { wort: "Hand" },
+        { wort: "Maus" },
+        { wort: "Hammer" },
+        { wort: "Schlüssel" },
+        { wort: "Muschel" },
+        { wort: "Flugzeug" },
+        { wort: "Schlitten" },
+        { wort: "Schloss" },
+        { wort: "Feuerwehrauto" }
       ],
-      wortchen:'',
+      wortchen: ""
     };
   },
   computed: {
@@ -122,7 +121,7 @@ export default {
       return this.padTime(minutes);
     },
     seconds: function() {
-      const seconds = this.totalTime - (this.minutes * 60);
+      const seconds = this.totalTime - this.minutes * 60;
       return this.padTime(seconds);
     }
   },
@@ -131,27 +130,27 @@ export default {
       this.isActive = isActive;
     },
     startTimer: function() {
-      this.shuffleArray()
+      this.shuffleArray();
       this.timer = setInterval(() => this.countdown(), 1000);
       this.resetButton = true;
     },
     resetTimer: function() {
-      this.totalTime = (1 * 90);
+      this.totalTime = 1 * 90;
       clearInterval(this.timer);
       this.timer = null;
       this.resetButton = false;
-      this.shuffleArray()
-      this.$router.push({name:'Spielende'})
+      this.shuffleArray();
+      this.$router.push({ name: "Spielende" });
     },
     padTime: function(time) {
-      return (time < 10 ? '0' : '') + time;
+      return (time < 10 ? "0" : "") + time;
     },
     countdown: function() {
-      if(this.totalTime >= 1){
+      if (this.totalTime >= 1) {
         this.totalTime--;
-      } else{
+      } else {
         this.totalTime = 0;
-        this.resetTimer()
+        this.resetTimer();
       }
     },
     shuffleArray: function() {
@@ -161,11 +160,11 @@ export default {
         this.worte[i] = this.worte[j];
         this.worte[j] = temp;
       }
-      this.erhaltewort()
+      this.erhaltewort();
     },
-    erhaltewort: function () {
-      let x = this.worte[3].wort
-      this.wortchen = x
+    erhaltewort: function() {
+      let x = this.worte[3].wort;
+      this.wortchen = x;
     }
   }
 };
@@ -197,17 +196,47 @@ button:hover {
   opacity: 1;
 }
 
-  .erstesec h2{font-family: "Fredericka the Great";font-size: 30px;font-weight: lighter;text-align: center;text-transform: uppercase;color: white}
-  .erstesec p{font-family: "Hind Vadodara";font-size: 20px;font-weight: lighter;text-align: center;text-transform: uppercase;text-decoration: black underline;color: white}
-.üb{text-align: center}
+.erstesec h2 {
+  font-family: "Fredericka the Great";
+  font-size: 30px;
+  font-weight: lighter;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+}
+.erstesec p {
+  font-family: "Hind Vadodara";
+  font-size: 20px;
+  font-weight: lighter;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: black underline;
+  color: white;
+}
+.üb {
+  text-align: center;
+}
 #timer {
   font-size: 50px;
   line-height: 1;
   font-family: "Hind Vadodara";
   font-weight: lighter;
 }
-.spielstart:hover{background: #4C7FCC;border-radius: 40px}
-.wort{text-align: center}
-  .zeit{margin-left: 15%;color: white}
-  .aufg{font-weight: lighter;font-family: "Hind Vadodara";color: white;font-size: 25px}
+.spielstart:hover {
+  background: #4c7fcc;
+  border-radius: 40px;
+}
+.wort {
+  text-align: center;
+}
+.zeit {
+  margin-left: 15%;
+  color: white;
+}
+.aufg {
+  font-weight: lighter;
+  font-family: "Hind Vadodara";
+  color: white;
+  font-size: 25px;
+}
 </style>

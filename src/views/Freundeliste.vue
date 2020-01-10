@@ -23,11 +23,11 @@
     </section>
     <section class="back">
       <v-icon
-              @click="$router.push({name:'Spielstart'})"
-          style="color: white; font-size: 70px; margin-bottom: 10%"
-          class="icon"
-          >mdi-arrow-left-drop-circle-outline</v-icon
-        >
+        @click="$router.push({ name: 'Spielstart' })"
+        style="color: white; font-size: 70px; margin-bottom: 10%"
+        class="icon"
+        >mdi-arrow-left-drop-circle-outline</v-icon
+      >
     </section>
   </div>
 </template>
@@ -55,5 +55,8 @@ export default {
   color: white;
   font-family: "Hind Vadodara";
 }
-  .icon:hover{background: #4C7FCC;border-radius: 40px}
+.icon:hover {
+  background: #4c7fcc;
+  border-radius: 40px;
+}
 </style>

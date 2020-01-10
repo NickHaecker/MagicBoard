@@ -46,18 +46,27 @@
                   ></v-text-field>
                   <v-container class="pwgotten">
                     <article class="link">
-                     <p style="font-family: 'Hind Vadodara'"  @click="$router.push({name:'Passwortvergessen'}), dialog=false" class="routerpw">
-                          Passwort vergessen?
-                        </p>
+                      <p
+                        style="font-family: 'Hind Vadodara'"
+                        @click="
+                          $router.push({ name: 'Passwortvergessen' }),
+                            (dialog = false)
+                        "
+                        class="routerpw"
+                      >
+                        Passwort vergessen?
+                      </p>
                     </article>
                   </v-container>
-                    <v-icon
-                      @click="dialog = false, $router.push({name:'Startscreen'})"
-                      type="submit"
-                      class="anmeldbutton"
-                      style="font-size: 70px; color: white; margin-left: 45%; margin-top: -2%;background-image: url(./assets/Hintergrund.jpg)"
-                      >mdi-login-variant</v-icon
-                    >
+                  <v-icon
+                    @click="
+                      (dialog = false), $router.push({ name: 'Startscreen' })
+                    "
+                    type="submit"
+                    class="anmeldbutton"
+                    style="font-size: 70px; color: white; margin-left: 45%; margin-top: -2%;background-image: url(./assets/Hintergrund.jpg)"
+                    >mdi-login-variant</v-icon
+                  >
                 </article>
               </v-container>
             </section>
@@ -74,10 +83,10 @@
               <v-container>
                 <article>
                   <v-btn
-                      @click="dialog = false, $router.push({name:'home'})"
-                      style="width: 30%; background: #FFFFFF; opacity: 0.6;margin-left: 35%; border-radius: 20px;font-family: 'Hind Vadodara'"
-                      >REGISTRIEREN</v-btn
-                    >
+                    @click="(dialog = false), $router.push({ name: 'home' })"
+                    style="width: 30%; background: #FFFFFF; opacity: 0.6;margin-left: 35%; border-radius: 20px;font-family: 'Hind Vadodara'"
+                    >REGISTRIEREN</v-btn
+                  >
                 </article>
               </v-container>
             </section>
@@ -88,11 +97,11 @@
                 >mdi-arrow-left-drop-circle-outline</v-icon
               ></v-btn
             ><v-icon
-                @click="dialog = false, $router.push({name:'Einstellungen'})"
-                style="font-size: 70px;float: right; color: white; margin-right: 2%"
-                class="setting"
-                >mdi-settings</v-icon
-              >
+              @click="(dialog = false), $router.push({ name: 'Einstellungen' })"
+              style="font-size: 70px;float: right; color: white; margin-right: 2%"
+              class="setting"
+              >mdi-settings</v-icon
+            >
           </div>
         </v-dialog>
       </v-row>
@@ -102,15 +111,15 @@
         </h1>
       </v-toolbar-title>
       <v-icon
-          style="color: white; font-size: 45px"
-          @click="$router.push({name:'home'})"
-          class="iconout"
-          >mdi-logout-variant</v-icon
-        >
+        style="color: white; font-size: 45px"
+        @click="$router.push({ name: 'home' })"
+        class="iconout"
+        >mdi-logout-variant</v-icon
+      >
     </v-app-bar>
-      <v-content class="content">
-        <router-view class="view" />
-      </v-content>
+    <v-content class="content">
+      <router-view class="view" />
+    </v-content>
   </v-app>
 </template>
 
@@ -126,10 +135,11 @@ export default {
 };
 </script>
 <style scoped>
-  .content{width: 60%;
-    margin-left: 20%;
-    background: red;
-  }
+.content {
+  width: 60%;
+  margin-left: 20%;
+  background: red;
+}
 logo {
   height: 80px;
   width: 100px;
@@ -181,10 +191,27 @@ logo {
   margin-left: 36%;
   color: white;
 }
-.pwgotten:hover{cursor: pointer}
-.iconin:hover{background: #4C7FCC;border-radius: 20px}
-  .zrück:hover{background: #4C7FCC;border-radius: 40px}
-  .anmeldbutton:hover{background: #4C7FCC;border-radius: 40px}
-  .setting:hover{background: #4C7FCC;border-radius: 40px}
-  .iconout:hover{background: #4C7FCC;border-radius: 40px}
+.pwgotten:hover {
+  cursor: pointer;
+}
+.iconin:hover {
+  background: #4c7fcc;
+  border-radius: 20px;
+}
+.zrück:hover {
+  background: #4c7fcc;
+  border-radius: 40px;
+}
+.anmeldbutton:hover {
+  background: #4c7fcc;
+  border-radius: 40px;
+}
+.setting:hover {
+  background: #4c7fcc;
+  border-radius: 40px;
+}
+.iconout:hover {
+  background: #4c7fcc;
+  border-radius: 40px;
+}
 </style>

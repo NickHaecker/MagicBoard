@@ -201,7 +201,6 @@ export default {
     this.init();
   },
   computed: {
-
     scalingFactor() {
       return window.devicePixelRatio || 1;
     },
@@ -215,7 +214,6 @@ export default {
     }
   },
   methods: {
-
     cancelDrawing() {
       this.loadImageFromStorage();
       this.isActive = false;
@@ -308,7 +306,6 @@ export default {
     },
 
     setCanvasSize() {
-
       currentX = 0;
       currentY = 0;
     },

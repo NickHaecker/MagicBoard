@@ -2,27 +2,30 @@
   <div>
     <section class="menü">
       <article class="zflplay">
-       <v-icon style="font-size: 70px;color: #FFFFFF"
-                   class="icon"
-                   @click="$router.push({name:'Schwierigkeitsgrad'})"
-            >mdi-refresh</v-icon
-          >
+        <v-icon
+          style="font-size: 70px;color: #FFFFFF"
+          class="icon"
+          @click="$router.push({ name: 'Schwierigkeitsgrad' })"
+          >mdi-refresh</v-icon
+        >
         <p>Zufällige Spieler</p>
       </article>
       <article class="frndsuch">
-        <v-icon style="font-size: 70px;color: #FFFFFF"
-                   class="icon"
-                   @click="$router.push({name:'Freundesuchen'})"
-            >mdi-account-search</v-icon
-          >
+        <v-icon
+          style="font-size: 70px;color: #FFFFFF"
+          class="icon"
+          @click="$router.push({ name: 'Freundesuchen' })"
+          >mdi-account-search</v-icon
+        >
         <p>Freunde suchen</p>
       </article>
       <article class="frndlist">
-       <v-icon style="font-size: 70px;color: #FFFFFF"
-                   class="icon"
-                   @click="$router.push({name:'Freundeliste'})"
-            >mdi-account-badge-horizontal</v-icon
-          >
+        <v-icon
+          style="font-size: 70px;color: #FFFFFF"
+          class="icon"
+          @click="$router.push({ name: 'Freundeliste' })"
+          >mdi-account-badge-horizontal</v-icon
+        >
         <p>Freundesliste</p>
       </article>
     </section>
@@ -43,11 +46,11 @@
     </section>
     <section class="zurück">
       <v-icon
-          style="color: white; font-size: 70px; margin-bottom: 10%"
-          class="back"
-          @click="$router.push({name:'Startscreen'})"
-          >mdi-arrow-left-drop-circle-outline</v-icon
-        >
+        style="color: white; font-size: 70px; margin-bottom: 10%"
+        class="back"
+        @click="$router.push({ name: 'Startscreen' })"
+        >mdi-arrow-left-drop-circle-outline</v-icon
+      >
     </section>
   </div>
 </template>
@@ -124,6 +127,12 @@ export default {
   margin-top: 25%;
   margin-left: 2%;
 }
-  .icon:hover{background: #4C7FCC;border-radius: 40px}
-  .back:hover{background: #4C7FCC;border-radius: 40px}
+.icon:hover {
+  background: #4c7fcc;
+  border-radius: 40px;
+}
+.back:hover {
+  background: #4c7fcc;
+  border-radius: 40px;
+}
 </style>

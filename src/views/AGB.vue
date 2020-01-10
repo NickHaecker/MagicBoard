@@ -99,11 +99,11 @@
     </section>
     <section class="zurück">
       <v-icon
-          style="color: white; font-size: 70px; margin-bottom: 10%"
-          class="back"
-          @click="$router.push({name:'Einstellungen'})"
-          >mdi-arrow-left-drop-circle-outline</v-icon
-        >
+        style="color: white; font-size: 70px; margin-bottom: 10%"
+        class="back"
+        @click="$router.push({ name: 'Einstellungen' })"
+        >mdi-arrow-left-drop-circle-outline</v-icon
+      >
     </section>
   </div>
 </template>
@@ -122,7 +122,7 @@ export default {
   font-size: 40px;
   text-align: center;
   margin-top: 2%;
-  text-transform: uppercase
+  text-transform: uppercase;
 }
 .lorem {
   width: 70%;
@@ -136,5 +136,8 @@ export default {
 .lorem p {
   text-align: center;
 }
-  .back:hover{background: #4C7FCC;border-radius: 40px}
+.back:hover {
+  background: #4c7fcc;
+  border-radius: 40px;
+}
 </style>

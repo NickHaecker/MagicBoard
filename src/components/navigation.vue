@@ -53,8 +53,8 @@
             ]"
           >
             <v-icon
-                    class="iconlist"
-                    style="font-size: 40px"
+              class="iconlist"
+              style="font-size: 40px"
               @click="item.click"
               v-html="item.isActive ? item.activeBody : item.icon"
             ></v-icon>
@@ -318,5 +318,8 @@ export default {
 .navigation__horizontalNavigation .navigationMenu li {
   display: inline-flex;
 }
-  .iconlist{color: white;font-size: 20px}
+.iconlist {
+  color: white;
+  font-size: 20px;
+}
 </style>

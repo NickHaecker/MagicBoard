@@ -35,11 +35,11 @@
     </section>
     <section class="back">
       <v-icon
-              @click="$router.push({name:'Startscreen'})"
-          style="color: white; font-size: 70px; margin-bottom: 10%"
-          class="icon"
-          >mdi-arrow-left-drop-circle-outline</v-icon
-        >
+        @click="$router.push({ name: 'Startscreen' })"
+        style="color: white; font-size: 70px; margin-bottom: 10%"
+        class="icon"
+        >mdi-arrow-left-drop-circle-outline</v-icon
+      >
     </section>
   </div>
 </template>
@@ -120,7 +120,7 @@ export default {
         {
           name: "Lorem",
           score: 12
-        },
+        }
       ]
     };
   }
@@ -173,5 +173,8 @@ export default {
 .back {
   margin-top: 5%;
 }
-  .icon:hover{background: #4C7FCC;border-radius: 40px}
+.icon:hover {
+  background: #4c7fcc;
+  border-radius: 40px;
+}
 </style>
