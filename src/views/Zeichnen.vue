@@ -29,9 +29,6 @@
         <div>
           <h3 class="aufg">{{ this.wortchen }}</h3>
         </div>
-        <!--        <div v-for="wort in worte" v-bind:key="wort">-->
-        <!--          <h3>{{wort.wort}}</h3>-->
-        <!--        </div>-->
       </div>
     </section>
     <section class="zeichensec">

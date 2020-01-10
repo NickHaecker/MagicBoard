@@ -14,7 +14,7 @@
         name="E-MAil"
         label="E-MAil"
         id="E-MAil"
-        v-model="email"
+        v-model="user.email"
         type="E-MAil"
         required
         class="eingabefeld"
@@ -24,7 +24,7 @@
         name="Username"
         label="Username"
         id="Username"
-        v-model="Username"
+        v-model="user.username"
         required
         class="eingabefeld"
         style="width: 30% ;background: #FFFFFF; opacity: 0.6;margin-left: 35%;border-radius: 20px; margin-top: 5%"
@@ -33,7 +33,7 @@
         name="Passwort"
         label="Passwort"
         id="Passwort"
-        v-model="Passwort"
+        v-model="user.passwort"
         type="Passwort"
         required
         class="eingabefeld"
@@ -43,7 +43,7 @@
         name="Passwort bestätitgen"
         label="Passwort bestätitgen"
         id="Passwort bestätitgen"
-        v-model="confirmpassword"
+        v-model="user.finalpasswort"
         required
         class="eingabefeld"
         style="width: 30% ;background: #FFFFFF; opacity: 0.6;margin-left: 35%;border-radius: 20px; margin-top: 5%"
@@ -59,7 +59,7 @@
     </section>
     <section class="settings">
       <v-icon
-        style="font-size: 70px;float: right; color: white; margin-right: 5%;margin-top: 5%"
+        style="font-size: 70px;float: right; color: white; margin-right: 5%;margin-top: 5%;opacity: 0.6"
         class="setting"
         @click="$router.push({ name: 'Einstellungen' })"
         >mdi-settings</v-icon
@@ -71,12 +71,23 @@
 <script>
 export default {
   name: "home",
+  data(){
+    return {
+      user:{
+        email:'',
+        username:'',
+        passwort:'',
+        finalpasswort:'',
+      }
+    }
+  },
   components: {}
 };
 </script>
 <style scoped>
 .home {
   font-family: "Hind Vadodara";
+  background-image: url(../assets/neuneuHintergrudnstart.png);
 }
 .fistart h1 {
   color: white;

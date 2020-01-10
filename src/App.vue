@@ -29,7 +29,7 @@
                     name="Username"
                     label="Username"
                     id="email"
-                    v-model="Username"
+                    v-model="user.username"
                     type="Username"
                     required
                     class="eingabefeld"
@@ -39,7 +39,7 @@
                     name="password"
                     label="Password"
                     id="password"
-                    v-model="password"
+                    v-model="user.passwort"
                     required
                     class="eingabefeld"
                     style="width: 30% ;background: #FFFFFF; opacity: 0.6;margin-left: 35%;border-radius: 20px; margin-top: 3%"
@@ -127,10 +127,15 @@
 export default {
   name: "App",
 
+
   components: {},
 
   data: () => ({
-    dialog: false
+    dialog: false,
+    user:{
+      username:'',
+      passwort:''
+    }
   })
 };
 </script>
@@ -138,7 +143,8 @@ export default {
 .content {
   width: 60%;
   margin-left: 20%;
-  background: red;
+  /*background-image: url(./assets/Hintergrund.png);*/
+  background: cornflowerblue;
 }
 logo {
   height: 80px;

@@ -35,7 +35,12 @@
 
 <script>
 export default {
-  name: "Freundesuchen"
+  name: "Freundesuchen",
+  data(){
+    return{
+      username:''
+    }
+  }
 };
 </script>
 
