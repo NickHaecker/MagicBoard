@@ -1,5 +1,6 @@
 <template>
   <div>
+    <h1 class="üb">Spiel starten</h1>
     <section class="menü">
       <article class="zflplay">
         <v-icon
@@ -29,21 +30,6 @@
         <p>Freundesliste</p>
       </article>
     </section>
-    <section class="freundeliste">
-      <v-list dense class="frindliste">
-        <h3>Freunde:</h3>
-        <v-list-item-group v-model="item" color="primary">
-          <v-list-item v-for="(item, i) in items" :key="i" link :to="item.to">
-            <v-list-item-content>
-              <v-list-item-title
-                v-text="item.text"
-                style="color: white;border-bottom: white solid 1px; align-self: center;font-family: 'Hind Vadodara'"
-              ></v-list-item-title>
-            </v-list-item-content>
-          </v-list-item>
-        </v-list-item-group>
-      </v-list>
-    </section>
     <section class="zurück">
       <v-icon
         style="color: white; font-size: 70px; margin-bottom: 10%"
@@ -59,27 +45,6 @@
 export default {
   name: "Spielstart",
   data: () => ({
-    item: 1,
-    items: [
-      { text: "Lorem", to: "Schwierigkeitsgrad" },
-      { text: "Lorem", to: "Schwierigkeitsgrad" },
-      { text: "Lorem", to: "Schwierigkeitsgrad" },
-      { text: "Lorem", to: "Schwierigkeitsgrad" },
-      { text: "Lorem", to: "Schwierigkeitsgrad" },
-      { text: "Lorem", to: "Schwierigkeitsgrad" },
-      { text: "Lorem", to: "Schwierigkeitsgrad" },
-      { text: "Lorem", to: "Schwierigkeitsgrad" },
-      { text: "Lorem", to: "Schwierigkeitsgrad" },
-      { text: "Lorem", to: "Schwierigkeitsgrad" },
-      { text: "Lorem", to: "Schwierigkeitsgrad" },
-      { text: "Lorem", to: "Schwierigkeitsgrad" },
-      { text: "Lorem", to: "Schwierigkeitsgrad" },
-      { text: "Lorem", to: "Schwierigkeitsgrad" },
-      { text: "Lorem", to: "Schwierigkeitsgrad" },
-      { text: "Lorem", to: "Schwierigkeitsgrad" },
-      { text: "Lorem", to: "Schwierigkeitsgrad" },
-      { text: "Lorem", to: "Schwierigkeitsgrad" }
-    ]
   })
 };
 </script>
@@ -87,15 +52,24 @@ export default {
 <style scoped>
 .zflplay {
   display: flex;
-  margin-top: 10%;
+  margin-top: 20%;
+  margin-left: 21%;
+  background: #181857;
+  width: 31%;
 }
 .frndsuch {
   display: flex;
   margin-top: 5%;
+  margin-left: 21%;
+  background: #181857;
+  width: 31%;
 }
 .frndlist {
   display: flex;
   margin-top: 5%;
+  margin-left: 21%;
+  background: #181857;
+  width: 31%;
 }
 .menü {
   margin-left: 20%;
@@ -103,28 +77,18 @@ export default {
 .menü p {
   font-family: "Hind Vadodara";
   color: white;
-  margin-top: 2%;
+  margin-top: 3%;
   margin-left: 1%;
   font-size: 30px;
 }
-.freundeliste {
-  width: 25%;
-  float: right;
-  margin-right: 10%;
-  height: 250px;
-  overflow: auto;
-  position: sticky;
-  margin-top: 5%;
-}
+
 .freundeliste h3 {
   font-family: "Fredericka the Great";
   color: white;
 }
-.frindliste {
-  background-image: url(../assets/Hintergrund.jpg);
-}
+
 .zurück {
-  margin-top: 25%;
+  margin-top: 18%;
   margin-left: 2%;
 }
 .icon:hover {
@@ -135,4 +99,6 @@ export default {
   background: #4c7fcc;
   border-radius: 40px;
 }
+  .üb{font-weight: lighter;
+    font-family: "Fredericka the Great";font-size: 50px;color: white}
 </style>

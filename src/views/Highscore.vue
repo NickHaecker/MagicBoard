@@ -7,31 +7,31 @@
         </h1>
       </header>
     </section>
-    <section tabelle>
+    <section class="tabelle" >
       <article class="frnds">
         <h2>
           Deine Freunde:
         </h2>
+        <v-data-table
+          :headers="headers"
+          :items="player"
+          :sort-desc="[false, true]"
+          class="scoretable"
+        ></v-data-table>
       </article>
-      <v-data-table
-        :headers="headers"
-        :items="player"
-        :sort-desc="[false, true]"
-        class="scoretable"
-      ></v-data-table>
     </section>
     <section class="allplayers">
       <article class="elle">
         <h2>
           Alle Nutzer:
         </h2>
-      </article>
       <v-data-table
         :headers="headers"
         :items="playerz"
         :sort-desc="[false, true]"
-        class="scoretable"
+        class="scrta"
       ></v-data-table>
+      </article>
     </section>
     <section class="back">
       <v-icon
@@ -129,13 +129,18 @@ export default {
 
 <style scoped>
 .scoretable {
-  margin-top: 5%;
-  width: 70%;
-  margin-left: 15%;
+  width: 40%;
+  margin-left: 30%;
   background: #2d47ae;
   color: white;
   font-family: "Hind Vadodara";
 }
+.scrta{margin-left: 10%;
+  color: white;
+  font-family: "Hind Vadodara";
+  background: #2d47ae;
+  width: 40%;
+margin-left: 46%}
 .head {
   font-family: "Fredericka the Great";
   text-align: center;
@@ -146,11 +151,12 @@ export default {
   font-weight: lighter;
 }
 .frnds {
-  font-family: 25px;
+
   color: white;
   margin-left: 15%;
   font-family: "Fredericka the Great";
   margin-bottom: -2%;
+  display: flex;
 }
 .frnds h2 {
   font-weight: lighter;
@@ -160,15 +166,14 @@ export default {
   margin-top: 5%;
 }
 .elle {
-  font-family: 25px;
   color: white;
   margin-left: 15%;
   font-family: "Fredericka the Great";
-  margin-bottom: -2%;
 }
 .elle h2 {
   font-weight: lighter;
   font-family: "Hind Vadodara";
+  margin-top: 2%;
 }
 .back {
   margin-top: 5%;
@@ -177,4 +182,5 @@ export default {
   background: #4c7fcc;
   border-radius: 40px;
 }
+  .tabelle{margin-top: 5%}
 </style>

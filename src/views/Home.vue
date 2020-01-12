@@ -50,6 +50,7 @@
       ></v-text-field>
       <article class="art">
         <v-btn
+                style="background:   #181857;color: white"
           type="submit"
           class="btn"
           @click="$router.push({ name: 'Startscreen' })"
@@ -87,7 +88,7 @@ export default {
 <style scoped>
 .home {
   font-family: "Hind Vadodara";
-  background-image: url(../assets/neuneuHintergrudnstart.png);
+
 }
 .fistart h1 {
   color: white;

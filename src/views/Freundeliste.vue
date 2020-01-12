@@ -1,25 +1,25 @@
 <template>
   <div>
+    <h1 class="üb">Freundesliste</h1>
     <section class="Freundeliste">
-      <v-list dense class="frindliste">
-        <h3>Freunde:</h3>
-        <v-list-item-group v-model="item" color="primary">
-          <v-list-item
-            v-for="item in items"
-            :key="item.text"
-            :to="item.to"
-            link
-          >
-            <v-list-item-content>
-              <v-list-item-title
-                v-text="item.text"
-                style="color: white;border-bottom: white solid 1px; align-self: center;font-family: 'Hind Vadodara'"
-                link
-              ></v-list-item-title>
-            </v-list-item-content>
-          </v-list-item>
-        </v-list-item-group>
-      </v-list>
+      <article class="suchfeld">
+        <v-text-field
+                name="Username"
+                label="Username"
+                id="Username"
+                v-model="username"
+                type="Username"
+                required
+                class="eingabefeld"
+                ></v-text-field>
+        <v-btn class="hinzu" style="background: #181857;color: white">Freund Hinzufügen</v-btn>
+      </article>
+      <article class="freundeliste">
+        <v-list v-for="freund in freunde" :key="freund.text" class="listze">
+          <p v-text="freund.text" class="p" style="color: white"></p>
+          <v-btn text class="button" v-text="freund.tex" v-model="addplayer"></v-btn>
+        </v-list>
+      </article>
     </section>
     <section class="back">
       <v-icon
@@ -36,27 +36,44 @@
 export default {
   name: "Freundeliste",
   data: () => ({
-    items: [
-      { text: "Lorem", to: "Schwierigkeitsgrad" },
-      { text: "Lorem", to: "Schwierigkeitsgrad" },
-      { text: "Lorem", to: "Schwierigkeitsgrad" },
-      { text: "Lorem", to: "Schwierigkeitsgrad" }
+    freunde: [
+      { text: "Nick", tex:"hinzufügen"},
+      { text: "Helena" ,tex:"hinzufügen"},
+      { text: "Amanda",tex:"hinzufügen" },
+      { text: "Svenja" ,tex:"hinzufügen"},
+      { text: "Ann-Kathrin" ,tex:"hinzufügen"},
+      { text: "Sally2903" ,tex:"hinzufügen"},
+      { text: "Madb1" ,tex:"hinzufügen"},
+      { text: "Lolila2008" ,tex:"hinzufügen"}
     ]
-  })
+  }),
+  methods:{
+    addplayer: function(){
+
+    }
+  }
 };
 </script>
 
 <style scoped>
-.frindliste {
-  margin-top: 5%;
-  width: 70%;
-  margin-left: 15%;
-  background: #2d47ae;
-  color: white;
+.back{margin-top: 15%;margin-left: 3%}
+  .button{margin-left: 18%;position: absolute;background:  #181857;color: white;opacity: 1}
+.listze{display: flex;background: #4C4ECF; opacity: 0.9;padding-left: 10%}
+.freundeliste{
   font-family: "Hind Vadodara";
+  color: white;
+  width: 30%;
+  margin-left: 35%;
+  margin-top: 5%;
+  border-left: white solid 2px;
 }
+.eingabefeld{width: 150%; background: #FFFFFF; margin-left: 60%; border-radius: 20px;margin-top: 110%;opacity: 0.6}
+.Freundeliste{display: flex}
 .icon:hover {
   background: #4c7fcc;
   border-radius: 40px;
 }
+  .üb{font-weight: lighter;
+    font-family: "Fredericka the Great";font-size: 50px;color: white}
+  .hinzu{margin-top: 15%;margin-left: 58%}
 </style>

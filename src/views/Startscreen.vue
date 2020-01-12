@@ -1,14 +1,15 @@
 <template>
   <div>
-    <section class="plbt">
-      <v-icon
-        style="color: white; font-size: 70px"
-        class="icon"
-        @click="$router.push({ name: 'Spielstart' })"
-        >mdi-play</v-icon
-      >
-    </section>
     <section class="highfrie">
+      <article class="start">
+        <v-icon
+                style="color: white; font-size: 70px"
+                class="icon"
+                @click="$router.push({ name: 'Spielstart' })"
+        >mdi-play</v-icon
+        >
+        <p>Spiel starten</p>
+      </article>
       <article class="score">
         <v-icon
           style="font-size: 70px;color: #FFFFFF"
@@ -47,31 +48,46 @@ export default {
 </script>
 
 <style scoped>
-.plbt {
+.start p{
+  font-size: 30px;
+  font-family: "Hind Vadodara";
+  margin-top: 3%;
+  margin-left: 1%;
+  color: white;
+}
+.start {
+  display: flex;
   margin-top: 15%;
-  margin-left: 45%;
+  margin-left: 30%;
+  background: #181857;
+  width: 31%;
 }
 .score {
   display: flex;
   margin-top: 5%;
   margin-left: 30%;
+  background: #181857;
+  width: 31%;
 }
+.friends {
+   display: flex;
+   margin-top: 5%;
+   margin-left: 30%;
+  background: #181857;
+  width: 31%;
+ }
 .score p {
   font-size: 30px;
   font-family: "Hind Vadodara";
-  margin-top: 1%;
+  margin-top: 3%;
   margin-left: 1%;
   color: white;
 }
-.friends {
-  display: flex;
-  margin-top: 5%;
-  margin-left: 30%;
-}
+
 .friends p {
   font-family: "Hind Vadodara";
   font-size: 30px;
-  margin-top: 1%;
+  margin-top: 3%;
   margin-left: 1%;
   color: white;
 }
@@ -83,4 +99,5 @@ export default {
   background: #4c7fcc;
   border-radius: 40px;
 }
+  .settings{margin-top: 23%}
 </style>

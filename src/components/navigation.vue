@@ -124,6 +124,7 @@ export default {
       return [
         {
           name: "draw-save",
+          icon: "mdi-conten-safe",
           body: "draw",
           activeBody: "save",
           isActive: this.paintableView.isActive,

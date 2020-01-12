@@ -105,7 +105,7 @@ export default {
     navigation() {
       return {
         "draw-save": {
-          body: "click here!",
+          icon: "mdi-safe",
           activeBody: "<strong>save</strong>"
         },
         color: {

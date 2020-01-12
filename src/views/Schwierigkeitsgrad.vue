@@ -83,7 +83,7 @@ export default {
   color: #ffffff;
 }
 .schwierigkeitskarte {
-  background: #4c7fcc;
+  background: #181857;
   justify-content: flex-start;
   align-content: flex-start;
 }
