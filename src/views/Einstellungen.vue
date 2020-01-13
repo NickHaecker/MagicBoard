@@ -38,7 +38,7 @@
     </section>
     <section class="back">
       <v-icon
-        style="color: white; font-size: 70px; margin-bottom: 10%"
+        style="color: white; font-size: 70px"
         class="backs"
         @click="$router.push({ name: 'Startscreen' })"
         >mdi-arrow-left-drop-circle-outline</v-icon
@@ -67,7 +67,7 @@ export default {
   font-family: "Hind Vadodara";
 }
 .back {
-  margin-top: 10%;
+  margin-top: 5%;
   margin-left: 5%;
 }
 .icon:hover {

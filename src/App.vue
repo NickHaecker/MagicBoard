@@ -107,11 +107,11 @@
           </v-img>
         </v-dialog>
       </v-row>
-      <v-toolbar-title>
+
         <h1 class="überschrift">
-          Magic Board
+          MagicBoard
         </h1>
-      </v-toolbar-title>
+
       <v-icon
         style="color: white; font-size: 45px"
         @click="$router.push({ name: 'home' })"
@@ -163,6 +163,8 @@ logo {
   font-size: 50px;
   font-weight: lighter;
   color: white;
+  margin-left: 35%;
+  margin-right: 30%;
 }
 .iconin {
   /*margin-right: -30%;*/
@@ -170,13 +172,13 @@ logo {
 }
 .iconout {
   float: right;
-  margin-right: 200%;
+margin-right: 5%;
   /*text-decoration: none;*/
   /*justify-content: flex-end;*/
   /*align-items: center;*/
   /*align-self: center;*/
-  float: right;
-  margin-left: 90%;
+
+
 }
 .anmeldekarte {
   width: 100%;
