@@ -14,7 +14,7 @@
       <h2 class="dritterplatz">Helena</h2>
     </div>
     <section class="scoretable">
-      <svg width="297mm" height="210mm" version="1.1" viewBox="0 0 1052.3622 744.09448" xmlns="http://www.w3.org/2000/svg">
+      <svg width="260mm" height="210mm" version="1.1" viewBox="0 0 1052.3622 744.09448" xmlns="http://www.w3.org/2000/svg">
         <g transform="translate(0 -308.27)">
           <g transform="matrix(1.2995 0 0 1.2995 115.5 -1270.8)">
             <path d="m179.79 1528.4v-106.77h213.54v213.54h-213.54v-106.77z" fill="#ffd700"/>
@@ -172,9 +172,9 @@ export default {
 </script>
 
 <style scoped>
-  .zweiterplatz{margin-left: 50%;font-size: 40px;margin-top: 45%;}
-  .ersterplatz{margin-left: 35%;font-size: 40px;margin-top: 35%}
-  .dritterplatz{margin-left: 40%;font-size: 40px;margin-top: 70%}
+  .zweiterplatz{margin-left: 30%;font-size: 40px;margin-top: 25%;}
+  .ersterplatz{margin-left: 30%;font-size: 40px;margin-top: 20%}
+  .dritterplatz{margin-left: 30%;font-size: 40px;margin-top: 45%}
 .head h2 {
   text-transform: uppercase;
   color: #ffffff;
@@ -191,7 +191,9 @@ header {
   align-content: center;
 }
 .scoretable {
-  margin-top: 2%;
+  width: 50%;
+  margin-top: -10%;
+  margin-left: -5.5%;
 }
 .buttons {
   display: flex;
@@ -213,6 +215,6 @@ header {
   text-align: center;
   color: white;
 }
-  .hint{background: #4C4ECF}
+  .hint{background: #4C4ECF;height: 900px}
 
 </style>

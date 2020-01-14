@@ -58,23 +58,23 @@ export default {
 .start {
   display: flex;
   margin-top: 15%;
-  margin-left: 30%;
+  margin-left: 27%;
   background: #181857;
-  width: 31%;
+  width: 40%;
 }
 .score {
   display: flex;
   margin-top: 5%;
-  margin-left: 30%;
+  margin-left: 27%;
   background: #181857;
-  width: 31%;
+  width: 40%;
 }
 .friends {
    display: flex;
    margin-top: 5%;
-   margin-left: 30%;
+   margin-left: 27%;
   background: #181857;
-  width: 31%;
+  width: 40%;
  }
 .score p {
   font-size: 30px;

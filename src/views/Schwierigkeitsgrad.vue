@@ -91,7 +91,7 @@ export default {
   margin-left: 5%;
 }
 #links {
-  margin-left: 25%;
+  margin-left: 20%;
 }
 .head h1 {
   font-family: "Fredericka the Great";

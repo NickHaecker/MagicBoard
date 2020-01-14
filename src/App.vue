@@ -108,9 +108,8 @@
         </v-dialog>
       </v-row>
 
-        <h1 class="überschrift">
-          MagicBoard
-        </h1>
+        <v-img class="überschrift" src="./assets/ueberschrift.png" >
+        </v-img>
 
       <v-icon
         style="color: white; font-size: 45px"
@@ -158,13 +157,10 @@ logo {
   justify-content: space-between;
 }
 .überschrift {
-  text-align: center;
-  font-family: "Fredericka the Great";
-  font-size: 50px;
-  font-weight: lighter;
-  color: white;
-  margin-left: 35%;
-  margin-right: 30%;
+
+width: 65%;
+margin-right: 5%;
+  margin-left: 15%;
 }
 .iconin {
   /*margin-right: -30%;*/

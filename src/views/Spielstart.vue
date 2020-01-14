@@ -53,23 +53,23 @@ export default {
 .zflplay {
   display: flex;
   margin-top: 20%;
-  margin-left: 21%;
+  margin-left: 16%;
   background: #181857;
-  width: 31%;
+  width: 40%;
 }
 .frndsuch {
   display: flex;
   margin-top: 5%;
-  margin-left: 21%;
+  margin-left: 16%;
   background: #181857;
-  width: 31%;
+  width: 40%;
 }
 .frndlist {
   display: flex;
   margin-top: 5%;
-  margin-left: 21%;
+  margin-left: 16%;
   background: #181857;
-  width: 31%;
+  width: 40%;
 }
 .menü {
   margin-left: 20%;

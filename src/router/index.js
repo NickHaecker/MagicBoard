@@ -12,6 +12,7 @@ import Spielende from "../views/Spielende";
 import Einstellungen from "../views/Einstellungen";
 import AGB from "../views/AGB";
 import Passwortvergessen from "../views/Passwortvergessen";
+import ZeichnenGegner from "../views/ZeichnenGegner";
 
 Vue.use(VueRouter);
 
@@ -20,6 +21,11 @@ const routes = [
     path: "/",
     name: "home",
     component: Home
+  },
+  {
+    path: "/ZeichnenGegner",
+    name: "ZeichnenGegner",
+    component: ZeichnenGegner
   },
   {
     path: "/Passwortvergessen",
