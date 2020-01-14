@@ -54,7 +54,7 @@
       </paintable>
     </section>
     <article>
-      <v-btn class="but" text style="background: #181857;color: white;margin-left: 5%" v-if="timer" @click="$router.push({name:'Zeichnen'})">Du</v-btn>
+      <v-btn class="but" text style="background: gray;color: white;margin-left: 5%" v-if="timer" @click="$router.push({name:'Zeichnen'})">Du</v-btn>
       <v-btn class="but" text style="background: #181857;color: white" v-if="timer" @click="$router.push({name:'ZeichnenGegner'})">Gegner</v-btn>
     </article>
   </div>

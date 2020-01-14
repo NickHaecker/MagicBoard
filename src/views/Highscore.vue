@@ -17,6 +17,7 @@
           :items="player"
           :sort-desc="[false, true]"
           class="scoretable"
+          style="background: #131b42;color: white"
         ></v-data-table>
       </article>
     </section>
@@ -30,13 +31,14 @@
         :items="playerz"
         :sort-desc="[false, true]"
         class="scrta"
+        style="background: #131b42;color: white"
       ></v-data-table>
       </article>
     </section>
     <section class="back">
       <v-icon
         @click="$router.push({ name: 'Startscreen' })"
-        style="color: white; font-size: 70px; margin-bottom: 10%"
+        style="color: white; font-size: 70px; margin-bottom: 5%;margin-left: 5%"
         class="icon"
         >mdi-arrow-left-drop-circle-outline</v-icon
       >
@@ -54,7 +56,7 @@ export default {
           text: "Player",
           align: "left",
           sortable: false,
-          value: "name"
+          value: "name",
         },
         { text: "Score", value: "score" }
       ],
@@ -130,17 +132,20 @@ export default {
 <style scoped>
 .scoretable {
   width: 40%;
+  margin-top: 5%;
   margin-left: 30%;
   background: #2d47ae;
   color: white;
   font-family: "Hind Vadodara";
 }
-.scrta{margin-left: 10%;
+.scrta{
   color: white;
   font-family: "Hind Vadodara";
   background: #2d47ae;
   width: 40%;
-margin-left: 46%}
+margin-left: 34.5%;
+  margin-top: 5%;
+}
 .head {
   font-family: "Fredericka the Great";
   text-align: center;
@@ -164,11 +169,14 @@ margin-left: 46%}
 }
 .allplayers {
   margin-top: 5%;
+
 }
 .elle {
   color: white;
   margin-left: 15%;
   font-family: "Fredericka the Great";
+  margin-bottom: -2%;
+  display: flex;
 }
 .elle h2 {
   font-weight: lighter;

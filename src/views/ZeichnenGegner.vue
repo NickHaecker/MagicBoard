@@ -1,7 +1,7 @@
 <template>
     <div>
         <section class="zeichensec">
-            <paintable
+            <paintable-gegner
                     :active="isActive"
                     :width="800"
                     :height="800"
@@ -19,18 +19,20 @@
                     ref="paintable"
                     @toggle-paintable="toggledPaintable"
             >
-            </paintable>
+            </paintable-gegner>
         </section>
         <article>
-            <v-btn class="but" text style="background: #181857;color: white;margin-left: 5%"  @click="$router.push({name:'Zeichnen'})">Du</v-btn>
-            <v-btn class="but" text style="background: #181857;color: white"  @click="$router.push({name:'ZeichnenGegner'})">Gegner</v-btn>
+            <v-btn class="but" text style="background: #181857;color: white;margin-left: 6%"  @click="$router.push({name:'Zeichnen'})">Du</v-btn>
+            <v-btn class="but" text style="background: gray;color: white"  @click="$router.push({name:'ZeichnenGegner'})">Gegner</v-btn>
         </article>
     </div>
 </template>
 
 <script>
+
     export default {
         name: "ZeichnenGegner",
+
         data() {
             return {
                 isFirstPaintable: true,

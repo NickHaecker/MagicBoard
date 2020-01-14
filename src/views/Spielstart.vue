@@ -52,7 +52,7 @@ export default {
 <style scoped>
 .zflplay {
   display: flex;
-  margin-top: 20%;
+  margin-top: 15%;
   margin-left: 16%;
   background: #181857;
   width: 40%;

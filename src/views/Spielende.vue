@@ -143,7 +143,7 @@
         class="nr"
         @click="$router.push({ name: 'Schwierigkeitsgrad' })"
         text
-        style="background: #2d47ae;color: white;font-size: 25px;border-radius:20px "
+        style="background: #181857;color: white;font-size: 25px;border-radius:20px "
       >
         Neue Runde?
       </v-btn>
@@ -152,7 +152,7 @@
         text
         class="hm"
         @click="$router.push({ name: 'Startscreen' })"
-        style="background: #2d47ae;color: white;font-size: 25px;border-radius:20px "
+        style="background: #181857;color: white;font-size: 25px;border-radius:20px "
       >
         Hauptmenü
       </v-btn>
@@ -204,9 +204,11 @@ header {
 }
 .nr {
   margin-right: 5%;
+  margin-top: -10%;
 }
 .hm {
   margin-left: 5%;
+  margin-top: -10%;
 }
 .head h1 {
   font-family: "Fredericka the Great";
