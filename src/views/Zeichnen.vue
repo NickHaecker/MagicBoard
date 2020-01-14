@@ -69,7 +69,7 @@ export default {
       useEraser: false,
       color: "#000",
       timer: null,
-      totalTime: 1 * 90,
+      totalTime: 1 * 45,
       resetButton: false,
       worte: [
         { wort: "Haus" },
@@ -132,7 +132,7 @@ export default {
       this.resetButton = true;
     },
     resetTimer: function() {
-      this.totalTime = 1 * 90;
+      this.totalTime = 1 * 45;
       clearInterval(this.timer);
       this.timer = null;
       this.resetButton = false;
