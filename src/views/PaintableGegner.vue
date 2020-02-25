@@ -1,12 +1,12 @@
 <template>
     <div class="paintable" v-if="!hide">
-        <navigation-gegner
+        <navigation
                 v-if="!disableNavigation"
                 :horizontalNavigation="horizontalNavigation"
                 class="nav"
         >
             <div slot="paintable-navigation-draw"></div>
-        </navigation-gegner>
+        </navigation>
 
         <canvas
                 :ref="'canvas-' + canvasId"
